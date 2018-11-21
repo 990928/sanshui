@@ -1,0 +1,3101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; 
+   padding:0; 
+   list-style:none;}
+/*头部开始*/
+.header{ width:100%; 
+         height:30px; 
+		 background:#fafafa; 
+		 outline:1px solid #E4E4E4;}
+.header-1{ width:1200px; 
+           height:30px; 
+		   position:relative; 
+		   margin:0 auto; }
+.header-left{ width:500px; 
+              height:30px; 
+			  position:absolute; 
+		      margin-left:0px; }	
+.header-right{ width:515px; 
+               height:30px; 
+			   position:absolute; 
+			   margin-left:700px;}
+.hr{ 
+     float:left;}
+.hr1{ width:90px; 
+      height:30px; 
+	  position: relative; }
+.hr11{ width:90px; 
+       height:30px;}
+.hr12{ width:90px; 
+       height:30px;}
+.hr1a{ width:12px; 
+       height:14px; 
+	   float:left; 
+	   margin-top:8px;  
+	   margin-left:4px; 
+	   background: url(images/bigBg.png) no-repeat; 
+	   background-position:-103px -836px;}
+.hr1b{ width:52px; 
+       height:17px; 
+	   float:left; 
+	   margin-top:6px; 
+	   margin-left:2px;}
+.hr1b>a{ font-size:11px; 
+         color:#222; 
+		 text-decoration:none;}
+.hr1c{ width:8px; 
+       height:4px; 
+	   float:left; 
+	   margin-top:15px; 
+	   background:url(images/bigBg.png) no-repeat; 
+	   background-position:-281px -839px;}
+.hr1h{ width:90px; 
+       height:60px;
+	   box-shadow:2px 2px 2px #ccc;
+	   position:absolute; 
+	   background:#FFF; 
+	   display:none;}
+.hr1c1{ background-position:-317px -839px;}
+.hr1hd{ text-align:center; 
+	   width:90px; 
+	   height:30px;}
+.hr1hd>a{ font-size:12px; 
+         color:#222; 
+		 text-decoration:none;}
+.hr1:hover .hr1h{ display:block;}
+.hr1b>a:hover{ text-decoration:underline; 
+             color:#F60;}
+.hr1d>a:hover{ text-decoration:underline; 
+             color:#F60;}
+.hr2{ width:10px; 
+      height:30px; 
+	  line-height:30px; 
+	  color:#ccc; 
+	  text-align:center;}
+.hr3{ width:90px; 
+      height:30px; 
+	  position:relative;}
+.hr3a{ width:12px; 
+       height:14px; 
+	   margin-top:8px; 
+	   margin-left:4px; 
+	   float:left;
+	   background:url(images/bigBg.png) no-repeat; 
+	   background-position:-137px -837px;}
+.hr3b{ width:64px; 
+       height:17px; 
+	   float:left; 
+	   margin-left:6px; 
+	   line-height:30px;}
+.hr3b>a{ text-decoration:none; 
+         font-size:12px; 
+		 color:#222;}
+.hr3b>a:hover{ color:#F60;}
+.hr3h{ outline:1px solid #ccc; 
+       position:absolute; 
+	   margin-top:30px; 
+	   z-index:50; 
+	   display:none;}
+.hr3:hover .hr3h{ display:block;}
+.hr5{ width:68px; 
+      height:30px; }
+.hr5a{ width:15px; 
+       height:14px; 
+	   margin-top:8px; 
+	   margin-left:4px; 
+	   float:left; 
+	   background: url(images/bigBg.png) no-repeat; 
+	   background-position:-175px -836px;}
+.hr5b{ width:48px; 
+       height:17px;  
+	   margin-left:20px;}
+.hr5b>a{ text-decoration:none; 
+         font-size:12px; 
+		 color:#222; 
+		 line-height:30px;}
+.hr5b>a:hover{ color:#F60;}
+.hr7{ width:71px; 
+      height:30px; }
+.hr7a{ width:15px; 
+       height:14px; 
+	   margin-top:8px; 
+	   margin-left:4px; 
+	   float:left; 
+	   background: url(images/bigBg.png) no-repeat; 
+	   background-position:-207px -837px;}
+.hr7b{ width:48px; 
+       height:17px;  
+	   margin-left:20px;}
+.hr7b>a{ text-decoration:none; 
+         font-size:12px; 
+		 color:#222; 
+		 line-height:30px;}
+.hr7b>a:hover{ color:#F60;}
+.hr9{ width:115px; 
+      height:30px;}
+.hr9a{ width:15px; 
+       height:14px; 
+	   background:url(images/bigBg.png) no-repeat; 
+	   background-position:-246px -837px; 
+	   margin-top:8px; 
+	   float:left; 
+	   margin-left:4px;}
+.hr9b{ width:84px; 
+       height:30px; 
+	   float:left; 
+	   position:relative;  
+	   margin-left:6px;   
+	   z-index:30;}
+.hr9b>a{ font-size:12px; 
+         text-decoration:none; 
+		 line-height:30px; 
+		 color:#222;}
+.hr9h{ width:115px; 
+       height:auto; 
+	   background:#FFF; 
+	   position:absolute; 
+	   margin-top:0px;
+	   z-index:100;
+	   box-shadow:2px 2px 2px #ccc; 
+	   display:none;}
+.hr9h1{ text-align:center;}
+.hr9b>a:hover{ text-decoration:underline; 
+         color:#F60;}
+.hr9:hover .hr9h{ display:block;}
+.sp1{ width:85px; 
+      height:30px; 
+	  float:left;} 
+.bg1{ width:14px; 
+      height:14px;
+	  margin-top:8px;
+	  float:left;
+	  background: url(../%E7%94%B5%E4%BF%A1189/images/bigBg.png) no-repeat; 
+	  background-position:-67px -836px;}
+.sp1 a{ font-size:13px; 
+        line-height:30px; 
+		color:#999; 
+		text-decoration:none;}
+.sp1 a:hover{ color:#F63;}	
+.sp2{ width:500px; 
+      height:30px;}	
+.sp2-1{ font-size:13px;
+		line-height:30px;
+		color:#999; 
+		margin-left:15px;} 
+.sp2 a{ font-size:13px; 
+        color:#999; 
+		margin-left:15px; 
+		text-decoration:none;}
+	
+/*头部左体结束*/
+/*logo*/
+.logo{ width:1200px; 
+       height:120px; 
+	   margin:0 auto; 
+	   position:relative;
+	  }
+.logo-left{ width:223px; 
+            height:80px; 
+			display:block; 
+			position:absolute;
+			margin-top:20px;}
+.logo-2{ width:81px; 
+         height:29px; 
+		 position:absolute; 
+		 margin-left:248px;
+		 margin-top:45px; 
+		 background: url(../%E7%94%B5%E4%BF%A1189/images/bigBg.png);
+		 background-position:-230px -19px;} 
+.logo-2 a{line-height:29px; 
+          margin-left:13px; 
+		  text-decoration:none; 
+		  color:#000; 
+		  font-size:14px;}
+.logo-2-hidden{ width:420px; 
+                height:120px; 
+				outline:1px solid #CCC; 
+				position:absolute;
+				margin-left:1px; 
+				display:none; 
+				background:#FFF; 
+				font-size:15px; 
+				z-index:1;}
+.logo-2:hover .logo-2-hidden{ display:block;}
+.zm{ color:#F63; 
+     float:left; 
+	 line-height:30px; 
+	 margin-left:10px; 
+	 }
+.dq a{ text-decoration:none; 
+       margin-left:5px; 
+	   color: #666; 
+	   font-size:14px; 
+	   line-height:30px;}	
+.dq>a:hover{ color:#F60;}
+.rescher{ height:94px; 
+          width:580px; 
+		  position:absolute; 
+		  margin-top:13px; 
+		  margin-left:359px;}
+.rescher-top{ width:550px; 
+              height:32px; 
+			  margin-left:-2px;}
+.rescher-zhong{ width:502px; 
+                height:32px;
+				outline:2px solid #FF8200; 
+				position:relative;}
+.rescher-bottom{ width:580px; 
+                 height:20px; 
+				 margin-top:10px; 
+				 position:relative; 
+				 overflow:hidden;}
+.rescher-top-a{ width:250px;
+                height:32px; 
+				  }
+.rescher-top-a div{ width:90px;
+                   height:32px; 
+				   float:left; 
+				   text-align:center; 
+				   line-height:32px;}
+.rescher-top-a>a{ text-decoration:none; 
+                     color:#666;}			   
+#rt1:target{ background:#FF8200; color:#FFF;}
+#rt2:target{ background:#FF8200; color:#FFF;}
+.re1{ width:32px; 
+      height:32px; 
+	  float:left; 
+	  margin-top:2px; 
+	  background:url(%E7%B4%A0%E6%9D%90/ioc_01.gif);}
+.re3{ width:80px; 
+      height:32px; 
+	  position:absolute; 
+	  margin-top:-30px;  
+	  margin-left:422px;
+	  background:#FF8200}
+.re3>a{ line-height:32px; 
+        font-size:21px; 
+		color:#FFF; 
+		margin-left:19px;}
+.rescher-bottom>ul{ width:580px; 
+                    height:60px; 
+					position:absolute; 
+					animation:sa 15s linear infinite; 
+					}
+@keyframes sa{0%{ top:0;}
+              45%{ top:0;}
+			  50%{ top:-20px;}
+			  95%{ top:-20px;}
+			  99.999999%{ top:-40px;} 
+			  100%{ top:0;}}
+.rescher-bottom li a{ font-size:13px; 
+                      text-decoration:none; 
+					  color: #888;}
+#sa1{ color:#F00;}
+#sa2{ color:#00F;}
+/*右侧轮播*/
+.logo-right{ width:253px; 
+             height:76px; 
+			 position:absolute; 
+			 margin-left:947px; 
+			 margin-top:22px; 
+			 overflow:hidden;
+			 } 
+.logo-right ul{ width:253px; 
+                height:152px; 
+				position:absolute; 
+				animation:move 6s linear infinite; 
+				}
+@keyframes move{ 0%{ top:0;}
+                 25%{ top:0;}
+				 50%{ top:-76px;}
+				 75%{ top:-76px;}
+				 100%{ top:0;}}
+/*导航开始*/
+.nav{ width:100%; 
+      height:45px; 
+	  background:#FF8200;}
+.nav1{ width:1200px; 
+       height:45px; 
+	   position:relative;  
+	   margin:0 auto;}
+.nava1{ width:190px; 
+        height:45px; 
+		float:left; 
+		display:block; 
+		background:url(%E7%94%B5%E4%BF%A1%E7%B4%A0%E6%9D%90%E5%8C%85/images/bigBg.png); 
+		background-position:-223px -716px;}
+.nava2{ width:780px; 
+        height:45px; 
+		position:absolute; 
+		margin-left:190px;}
+.nava2 li{ width:120px; 
+           height:45px; 
+		   display:inline-block;  
+		   float:left;
+		   position:relative;} 
+.nava2-1{ width:30px; 
+         height:45px; 
+		 position:absolute;
+		 background: url(%E7%94%B5%E4%BF%A1%E7%B4%A0%E6%9D%90%E5%8C%85/images/bigBg.png); 
+		 background-position:-232px -519px; 
+		 margin-left:12px;}		   
+.nava2-a{ width:190px; 
+             height:45px; 
+			 display:block;  
+			 position:absolute; 
+			 margin-left:25px; 
+			 text-decoration:none; 
+			 line-height:45px; 
+			 color:#FFF;}
+.nava2-a a{ text-align:center;}
+.nava2-hi{ display:none;}
+.nava2 li:hover .nava2-hi{ display:block;}
+.nava2 li:hover .nava2-a{ font-weight: bold;}
+.nava3{ width:72px; 
+        height:45px; 
+		position:absolute; 
+		margin-left:1128px;}
+.nava3-1{ width:16px; 
+          height:15px; 
+		  margin-top:15px; 
+		  float:left;
+		  background:url(%E7%94%B5%E4%BF%A1%E7%B4%A0%E6%9D%90%E5%8C%85/images/bigBg.png); 
+		  background-position:-231px -186px;}
+.nava3-2{ width:48px; 
+          height:34px; 
+		  margin-left:24px; 
+		  margin-top:6px;}
+.nava3-2 a{ line-height:34px; 
+            color:#FFF; 
+			text-decoration:none;}
+.nava3-2 a:hover{ text-decoration:underline;}
+/*主体部分*/
+.main{ width:100%;
+       height:425px; 
+	   background: url(images/c5121937-5dd2-43d1-9caa-f23f449845e1.jpg) no-repeat; 
+	   background-position:center;}
+.maina{ width:1200px; 
+        height:425px;
+		z-index:5; 
+		position:relative;
+		margin:0 auto;}
+		
+/*主体左部*/
+.main-left{ width:190px; 
+            height:420px; 
+			float:left; 
+			position: absolute; 
+			background: #fafafa;}
+.main-left>ul>li{ width:189px; 
+            height:59px; 
+			border-bottom: 1px solid #e8e8e8;
+            border-left: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
+            }
+.main-left li>a{ text-decoration:none; 
+                 color:#777; 
+				 font-size:14px; 
+				 margin-left:60px; 
+				 line-height:60px;}
+.mf1{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-6px -39px;}
+.mf2{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-1px -150px;}
+.mf3{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-1px -262px;}
+.mf4{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-1px -372px;}
+.mf5{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-1px -483px;}
+.mf6{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-1px -593px;}
+.mf7{ background:url(images/bigBg.png) no-repeat; 
+      background-position:-1px -705px;}
+.mf1-hi{ width:600px; 
+         height:550px; 
+		 margin-top:-60px; 
+		 margin-left:190px; 
+		 background:#FFF; 
+		 line-height:50px; 
+		 box-shadow:8px 8px 8px #CCCCCC; 
+		 display:none; 
+		 z-index:2;
+		 }
+.mf1-hi li{ height:50px; 
+            width:550px; 
+			margin:0 auto; 
+			position:relative;
+			border-bottom:1px solid  #ccc;}
+.mf1-a{ width:100px; 
+        height:50px; 
+		float:left; 
+		font-size:14px; 
+		color:#555;}
+.mf1-b{ color:#999; 
+        position:absolute; 
+		margin-left:80px;}
+.mf1-b>a{ text-decoration:none; 
+          color:#777; 
+		  font-size:14px;}
+.a360{ position:relative;}
+.a360-1{ float:left; 
+         position:absolute; 
+		 margin-left:25px;}
+.a360-2{ position:absolute; 
+         margin-top:0px; 
+		 margin-left:305px;}
+.mf1-c{font-size:14px; 
+		color:#555; 
+		width:100px; 
+		margin-left:25px; 
+        height:50px;}
+.mf1-b>a:hover{ color:#F60;}
+.mf1:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -95px;}
+.mf1:hover .mf1-hi{ display:block;}
+.mf2-a{ width:600px; 
+      height:560px; 
+	  background:#FFF;  
+	  margin-left:190px; 
+	  margin-top:-120px;
+	  box-shadow:8px 8px 8px #CCCCCC; 
+	  display:none; 
+	  z-index:3;}
+.mf2:hover .mf2-a{ display:block;}
+.mf2:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -206px;}
+.mf21{ width:550px; 
+       height:50px; 
+	   border-bottom:1px solid #ccc; 
+	   line-height:50px; 
+	   margin-left:25px;}
+.mf21-a{
+		 width:70px; 
+		 float:left; 
+		 font-size:14px; 
+		 color:#555;}
+.mf21-b{ width:480px; 
+         height:50px; 
+		 margin-left:76px; 
+		 color:#999;}
+.mf21-b-1{ color:#F00; 
+           font-size:14px; 
+		   text-decoration:none;}
+.mf21-b-2{ color:#999; 
+           font-size:16px;
+		   text-decoration:none;}
+.mf21 a:hover{ color:#F60;}
+.mf22 a:hover{ color:#F60;}
+.mf23 a:hover{ color:#F60;}
+.mf22{ width:550px; 
+       height:225px; 
+	   border-bottom:1px solid #ccc; 
+	   margin-left:25px; 
+	   position:relative;}
+.mf22-a{ width:70px; 
+         height:220px; 
+		 margin-top:18px; 
+		 font-size:14px;}
+.mf22-b{ width:480px;
+         height:220px; 
+		 position:absolute; 
+		 margin-top:-230px; 
+		 margin-left:70px;}
+.mf22-b li{ line-height:30px;}
+.mf22-b-1>a{ color:#00F; 
+             text-decoration:none; 
+			 font-size:13px;
+			 float:left;}
+.mf22-b-2>a{ color:#777; 
+             text-decoration:none; 
+			 font-size:13px;}
+.mf22-b-3>a{ color: #F00; 
+             text-decoration:none; 
+			 font-size:13px;}
+.mf23{width:550px; 
+       height:50px; 
+	   border-bottom:1px solid #ccc; 
+	   line-height:50px; 
+	   margin-left:25px; 
+	   font-size:14px; 
+	   position:relative;}
+.mf23-b{width:480px; 
+         position:absolute;
+		 margin-top:-50px;
+         height:50px; 
+		 margin-left:76px; 
+		 color:#999;}
+.mf23-b-1{ color:#F00; 
+		   text-decoration:none;}
+.mf23-b-2{ color:#00F; 
+           text-decoration:none;}
+.mf24{ margin-top:18px; 
+       margin-left:25px; 
+	   position:relative;}
+.img2{ margin-left:285px; 
+       position:absolute; 
+	   margin-top:-182px;}
+.mf3-a{ background:#FFF; 
+        width:600px; 
+		height:600px; 
+		box-shadow:8px 8px 8px #CCCCCC;  
+		margin-left:190px; 
+		margin-top:-180px;  
+		z-index:10; 
+		display:none;}
+.mf3-a1{ width:550px; 
+       height:50px; 
+	   border-bottom:1px solid #ccc; 
+	   margin:0 auto; 
+	   line-height:50px; 
+	   font-size:14px; 
+	   color:#666;}
+.mf3-a2{ width:550px; 
+        height:130px; 
+	    border-bottom:1px solid #ccc; 
+	    margin:0 auto;} 
+.mf3-aa{ width:70px; 
+         height:130px; 
+		 line-height:30px; 
+	     font-size:14px; 
+	     color:#666;}
+.mf3-ab{ width:480px; 
+		 height:130px; 
+		 margin-left:80px; 
+		 margin-top:-130px; 
+		 line-height:30px;
+		 }
+.ab1>a{ font-size:14px; 
+        color:#00F; 
+		text-decoration:none; 
+		float:left; }
+.ab2>a{ font-size:14px; 
+        color:#999; 
+		text-decoration:none; }
+.ab3>a{ color:#F00;}
+.ab2{ font-size:14px; 
+        color:#999;}
+.ab-1{ float:left}
+.mf3-a3{ width:550px; 
+       height:50px; 
+	   border-bottom:1px solid #ccc; 
+	   margin:0 auto; 
+	   line-height:50px; 
+	   font-size:14px; 
+	   color:#666;}
+.mf3-a31{ width:70px; 
+          height:50px; 
+		  font-size:14px; 
+		  color:#555;} 
+.mf3-a32{ width:470px; 
+          height:50px; 
+		  margin-left:80px; 
+		  margin-top:-50px; 
+		  position:relative;} 
+.mf3li1>a{ color:#F00; 
+		   text-decoration:none;}
+.mf3li2{ color:#777; 
+           font-size:14px; 
+		   position:absolute;
+		   margin-top:-50px; 
+		   margin-left:135px;}
+.mf3li2>a{ text-decoration:none; 
+           color:#777;}		   
+.mf3li3>a{ text-decoration:none; 
+           color: #00F;}
+.mf3li3{ color:#777; 
+           font-size:14px; 
+		   position:absolute;
+		   margin-top:-50px; 
+		   margin-left:210px;}
+.mf3-a4{ width:550px; 
+       height:50px; 
+	   border-bottom:1px solid #ccc; 
+	   margin:0 auto; 
+	   line-height:50px; 
+	   font-size:14px; 
+	   color:#666;}
+.mf3-a41{ width:70px; 
+          height:50px; 
+		  font-size:14px; 
+		  color:#555;} 
+.mf3-a42{ width:470px; 
+          height:50px; 
+		  margin-left:80px; 
+		  margin-top:-50px; 
+		  position:relative;} 
+.mf4li1>a{ color:#777; 
+		   text-decoration:none;}
+.mf4li2{ color:#777; 
+           font-size:14px; 
+		   position:absolute;
+		   margin-top:-50px; 
+		   margin-left:75px;}
+.mf4li2>a{ text-decoration:none; 
+           color:#F00;}		   
+.mf4li3>a{ text-decoration:none; 
+           color: #777;}
+.mf4li3{ color:#777; 
+           font-size:14px; 
+		   position:absolute;
+		   margin-top:-50px; 
+		   margin-left:210px;}
+.mf3-a5{ width:550px; 
+         height:100px; 
+		 margin:0 auto;}
+.mf3-a5a{ width:70px; 
+          height:100px; 
+		  font-size:14px; 
+		  color:#555; 
+		  position:relative;
+		  line-height:30px;}		   
+.mf3-a5b{ width:470px; 
+          height:100px; 
+		  position:absolute; 
+		  margin-top:-100px; 
+		  margin-left:80px;}
+.mf3-a5b li{ width:470px; 
+             height:30px; 
+			 color:#777;}
+.mf3-a5b li>a{ margin-left:0px; 
+               line-height:30px; 
+			   font-size:14px;
+			   text-decoration:none;}	
+.mf3-end{ width:550px; 
+          height:300px; 
+		  margin:0 auto; 
+		  position:relative;}
+.mf3-end2{ margin-left:280px; 
+           position:absolute; 
+           margin-top:-183px;}
+.mf3-a a:hover{ color:#F60;}
+.mf3:hover .mf3-a{ display:block;}
+.mf3:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -318px;}
+.mf4-a{ background:#FFF; 
+        width:600px; 
+		height:500px;  
+		margin-left:190px; 
+		margin-top:-240px; 
+		box-shadow:8px 8px 8px #CCCCCC;
+		display:none; 
+		z-index:15;}
+.mf41{ width:550px; 
+       height:50px; 
+	   border-bottom:1px solid #ccc; 
+	   margin:0 auto; 
+	   position:relative;}
+.mf41-a{ width:70px; 
+         height:50px; 
+		 float:left; 
+		 line-height:50px; 
+		 font-size:14px; 
+		 color:#777;}
+.mf41-b{ width:450px; 
+         height:50px; 
+		 position:absolute; 
+		 margin-left:80px; 
+		 font-size:14px; 
+		 line-height:50px; 
+		 color:#999; 
+		 }	
+.mf41-b>a{ text-decoration:none; 
+           color:#999;}
+.mf42{ width:550px; 
+       height:50px; 
+	   margin:0 auto; 
+	   position:relative;}
+.mf42-a{ width:70px; 
+         height:50px; 
+		 float:left; 
+		 line-height:50px; 
+		 font-size:14px; 
+		 color:#777;}
+.mf42-b{ width:450px; 
+         height:50px; 
+		 position:absolute; 
+		 margin-left:80px; 
+		 font-size:14px; 
+		 line-height:50px; 
+		 color:#999; 
+		 }	
+.mf42-b>a{ text-decoration:none; 
+           color:#999;}
+.mf43{ margin-left:25px; 
+       margin-top:10px;}
+.mf41 a:hover{ color:#F60;}
+.mf42 a:hover{ color:#F60;}
+.mf4:hover .mf4-a{ display:block;}
+.mf4:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -428px;}
+.mf5a{ background:#FFF; 
+        width:600px; 
+		height:420px; 
+		box-shadow:8px 8px 8px #CCCCCC;  
+		margin-left:190px; 
+		margin-top:-300px; 
+		display:none; 
+		z-index:17; 
+}
+.mf5a-1{ width:550px; 
+         height:50px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf5a-1a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf5a-1b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px;
+		  color:#999;}
+.mf5a-1b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf5a-2{ width:550px; 
+         height:50px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf5a-2a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf5a-2b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px;
+		  color:#999;}
+.mf5a-2b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf5a-3{ width:550px; 
+         height:50px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf5a-3a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf5a-3b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px;
+		  color:#999;}
+.mf5a-3b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf5a-4{ width:550px; 
+         height:80px; 
+		 margin:0 auto; }
+.mf5a-4a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf5a-4b{ width:470px; 
+          height:30px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf5a-4b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf5 a:hover{ color:#F60;}
+.mf5:hover .mf5a{ display:block;}
+.mf5:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -539px;}
+.mf6a{ background:#FFF; 
+        width:600px; 
+		height:420px; 
+		box-shadow:8px 8px 8px #CCCCCC;  
+		margin-left:190px; 
+		margin-top:-360px;
+		display:none; 
+		z-index:19;}
+.mf6a-1{ width:550px; 
+         height:80px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf6a-1a{ width:70px; 
+          height:80px; 
+		  line-height:40px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf6a-1b{ width:470px; 
+          height:80px;
+		  line-height:40px; 
+		  margin-top:-80px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf6a-1b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf6a-2{ width:550px; 
+         height:80px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf6a-2a{ width:70px; 
+          height:80px; 
+		  line-height:40px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf6a-2b{ width:470px; 
+          height:80px;
+		  line-height:40px; 
+		  margin-top:-80px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf6a-2b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf6a-3{ width:550px; 
+         height:50px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf6a-3a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf6a-3b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf6a-3b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf6a-4{ width:550px; 
+         height:50px; 
+		 margin:0 auto; }
+.mf6a-4a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf6a-4b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf6a-4b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf6 a:hover{ color:#F60;}
+.mf6:hover .mf6a{ display:block;}
+.mf6:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -649px;}
+.mf7a{ background:#FFF; 
+        width:600px; 
+		height:730px; 
+		box-shadow:8px 8px 8px #CCCCCC;  
+		margin-left:190px; 
+		margin-top:-420px; 
+		display:none; 
+		z-index:21;}
+.mf7a-1{ width:550px; 
+         height:130px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf7a-1a{ width:70px; 
+          height:130px; 
+		  line-height:30px; 
+		  font-size:14px;
+		  color:#555;}
+.mf7a-1b{ width:470px; 
+          height:130px;
+		  line-height:30px; 
+		  margin-top:-130px; 
+		  margin-left:80px;
+		  color:#999;}
+.mf7a-1b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+			
+.mf7a-2{ width:550px; 
+         height:130px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf7a-2a{ width:70px; 
+          height:130px; 
+		  line-height:30px; 
+		  font-size:14px;
+		  color:#555;}
+.mf7a-2b{ width:470px; 
+          height:130px;
+		  line-height:30px; 
+		  margin-top:-130px; 
+		  margin-left:80px;
+		  color:#999;}
+.mf7a-2b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf7a-3{ width:550px; 
+         height:50px; 
+		 margin:0 auto;
+		 border-bottom:1px solid #ccc; }
+.mf7a-3a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf7a-3b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf7a-3b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf7a-4{ width:550px; 
+         height:50px; 
+		 margin:0 auto;
+		 border-bottom:1px solid #ccc; }
+.mf7a-4a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf7a-4b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf7a-4b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf7a-5{ width:550px; 
+         height:80px; 
+		 margin:0 auto; 
+		 border-bottom:1px solid #ccc;}
+.mf7a-5a{ width:70px; 
+          height:80px; 
+		  line-height:40px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf7a-5b{ width:470px; 
+          height:80px;
+		  line-height:40px; 
+		  margin-top:-80px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf7a-5b>a{ font-size:13px; 
+            text-decoration:none; 
+			color:#777;}
+.mf7a-6{ width:550px; 
+         height:50px; 
+		 margin:0 auto;
+		 border-bottom:1px solid #ccc; }
+.mf7a-6a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf7a-6b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf7a-6b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf7a-7{ width:550px; 
+         height:50px; 
+		 margin:0 auto;}
+.mf7a-7a{ width:70px; 
+          height:50px; 
+		  line-height:50px; 
+		  font-size:14px; 
+		  color:#555;}
+.mf7a-7b{ width:470px; 
+          height:50px;
+		  line-height:50px; 
+		  margin-top:-50px; 
+		  margin-left:80px; 
+		  color:#999;}
+.mf7a-7b>a{ font-size:14px; 
+            text-decoration:none; 
+			color:#777;}
+.mf7-end2{ margin-top:-180px; 
+           margin-left:280px;}
+.mf7 a:hover{ color:#F60;}
+.mf7:hover .mf7a{ display:block;}
+.mf7:hover{ background:#FFF url(images/bigBg.png) no-repeat; 
+            background-position:-1px -761px;}		
+/*主体右部*/
+.main-ri{ width:224px; 
+          height:409px;  
+		  position:absolute; 
+		  margin-top:8px; 
+		  background:#FFF;
+		  margin-left:976px; 
+		 }
+.mrt{ width:224px; 
+      height:29px; 
+	  background:#F4F4F4; 
+	  border:1px solid #E4E4E4;}
+.mrt1{ width:116px; 
+       height:29px; 
+	   float:left;}
+.mrt1 a{ font-size:14px; 
+         text-align:center; 
+		 text-decoration:none; 
+		 line-height:29px; 
+		 position:absolute; 
+		 margin-left:33px; 
+		 color:#222;}
+.mrt2 a{ font-size:14px; 
+         text-align:center; 
+		 text-decoration:none; 
+		 line-height:29px; 
+		 position:absolute; 
+		 margin-left:33px; 
+		 color:#222;}
+.mrt2{ width:100px; 
+       height:29px;  
+	   float:left; 
+	   background:url(images/bigBg.png) no-repeat; 
+	   background-position:-216px -288px;}
+.mrt2:hover{background-position:-217px -324px;}
+.mrt1a{ width:105px; 
+        height:29px; 
+		float:left; 
+		background:url(images/bigBg.png) no-repeat; 
+		background-position:-216px -217px;}
+.mrt1b{ width:4px; 
+        height:29px;  
+		float:left; 
+		font-size:16px; 
+		line-height:29px; 
+		color:#999;}
+.mrcen{ width:224px; 
+        height:165px;}
+.mrca{ width:67px; 
+       height:74px; 
+	   outline:1px; 
+	   float:left; 
+	   text-align:center;}
+.ca1{ margin-left:10px;}
+.ca2{ margin-top:10px;}
+.mrca img{ margin-top:5px;}
+.mrca a{ margin-top:5px; 
+         text-decoration:none; 
+		 font-size:14px;
+		 color:#222;}
+.sx{ width:224px; 
+     height:2px; 
+	 background:url(images/bigBg.png) no-repeat; 
+	 background-position:-199px -569px; 
+	 position:absolute; 
+	 margin-top:165px;}
+.sd{ width:224px; 
+     height:15px; 
+	 margin-top:175px; 
+	 position:absolute;}
+.sd li{ font-size:15px; 
+        float:left;}
+.sd1{ margin-left:20px;}
+.sd li>a{ text-decoration:none; 
+          color:#222;}
+.sd li>a:hover{ color:#F60;}
+.dgg{ width:210px; 
+      height:26px; 
+	  position:absolute; 
+	  margin-top:351px;}
+.dgg1{ width:61px; 
+       height:26px; 
+	   float:left; 
+	   background:url(images/bigBg.png) no-repeat; 
+	   background-position:-283px -633px;}
+.dgg2{ width:149px; 
+       height:26px;  
+	   float:left; 
+	   position:relative;
+	   overflow:hidden;
+	   }
+.ddg1a{ font-size:14px; 
+        line-height:28px; 
+		position:absolute;
+		margin-left:15px;}
+.dgg2>ul{ width:2600px; 
+          height:26px; 
+		  position:absolute;
+		  animation:ko 25s infinite linear;}
+@keyframes ko{ from{ left:0px;}
+               to{ left:-1300px;}}
+.dgg2 li{ float:left; 
+          margin-left:15px;}
+.dgg2 li>a{ text-decoration:none; 
+            font-size:14px; 
+			line-height:28px; 
+			color:#222;}
+.dggcz{ width:206px; 
+        height:35px; 
+		position:absolute; 
+		margin-top:195px; 
+		margin-left:18px;}
+.dggcz1{ width:90px; 
+         height:30px; 
+		 float:left;
+		 margin-top:5px;}
+.dggcz2{ width:90px; 
+         height:30px; 
+		 float:left;
+		 margin-top:5px;}
+.la1{width:90px; 
+     height:30px; 
+	 line-height:30px;}
+.la1 a{ color: #F60; 
+      font-size:14px; 
+	  margin-top:-1px; 
+	  position:absolute;}
+.dgghm{ width:224px; 
+        height:38px; 
+		position:absolute; 
+		margin-top:230px;}
+.dm1{ width:46px; 
+      height:20px; 
+	  margin-top:10px; 
+	  float:left;}
+.dm1>a{ margin-left:15px; 
+        font-size:14px;}
+.dm2{ float:left; 
+      margin-top:10px;}
+.dgghm1{ margin-top:270px;}
+.dm3>input{ width:54px; 
+            height:21px; 
+			margin-top:-3px; 
+			background:url(images/sl.jpg) no-repeat right;}
+.dgghh{ width:108px; 
+        height:100px; 
+		outline:1px solid #ccc; 
+		background:#FFF; 
+		position:absolute; 
+		z-index:10; 
+		display:none;}
+.dgghh li{ width:54px; 
+           height:25px; 
+		   float:left;}
+.dgghh li>a{ line-height:25px; 
+             color:#777;}
+.dgghh li>a:hover{ color:#F60;}
+.dm3:hover .dgghh{ display:block;}
+.d2{ width:200px; 
+     height:30px; 
+	 position:absolute; 
+	 margin-left:10px;
+	 margin-top:320px;}
+.d21{ width:80px; 
+      height:20px; 
+	  position:absolute; 
+	  margin-left:10px; 
+	  margin-top:5px; 
+	  float:left; 
+	  background: #F93; 
+	  	 border-radius:3px; }
+.d22{ width:80px; 
+      height:20px;  
+	  margin-left:100px; 
+	  margin-top:5px; 
+	  float:left;  
+	  	 border-radius:3px; }
+.d2 a{ font-size:14px; 
+       margin-left:10px; 
+	   margin-top:4px;}
+.yb{ width:1200px; 
+     height:222px;  
+	 margin:0 auto; 
+	 margin-top:30px;}
+.yb-left{ width:190px; 
+          height:222px; 
+		  float:left;}
+.yb-right{ width:1010px; 
+           height:222px; 
+		   margin-left:190px; 
+		   position:relative; 
+		   overflow:hidden;}
+.yb-right>ul{ width:3070px; 
+              height:222px; 
+			  position:absolute;
+			  margin-left:0px; 
+			  animation:az 10s infinite linear;}
+@keyframes az{ 0%{ left:0px;} 
+               49.99999%{ left:0px;} 
+			   50%{ left:-1020px;}
+			   99.99999%{ left:-1020px;}
+			   100%{ left:-2040px;}}
+.yb-right li{ width:1020px; 
+              height:222px; 
+			  float:left;}
+.yb-right li>div{ width:1020px; 
+                  height:110px;}
+.yb-right li>div{ margin-top:1px;}
+.yb-right li>div>a{ margin-left:-3px;}
+.yb-right li>div img:hover{ box-shadow:8px 8px 8px #999;}
+.tup1{ width:26px; 
+       height:74px; 
+	   z-index:38; 
+	   position:absolute; 
+	   top:74px; 
+	   background:url(images/arr.png) no-repeat;} 
+.tup1:hover{ background-position:0 -74px;}
+.tup2{ width:26px; 
+       height:74px; 
+	   z-index:38; 
+	   position:absolute; 
+	   right:0px; 
+	   top:74px; 
+	   background:url(images/arr.png) no-repeat -26px 0;} 
+.tup2:hover{ background-position:-26px -74px;}
+/*腰部结束*/
+.gg{ width:1200px;    
+	  margin:0 auto;}
+.gg1{ width:1200px; 
+      height:470px;  
+	  margin:0 auto; 
+	  margin-top:30px; }
+.gt{ width:1200px; 
+     height:50px; 
+	 position:relative; }
+.gt1{ width:436px; 
+      height:50px; }
+.gtimg{ width:220px; 
+        height:50px; }
+.gttext{ width:196px; 
+         height:50px; 
+		 font-size:15px; 
+		 margin-top:-50px; 
+		 margin-left:240px;}
+.gttext>a{ line-height:65px; 
+           color:#555;}
+.gl{ width:190px; 
+     height:420px; 
+	 float:left; 
+}
+.gltop{ width:190px; 
+        height:100px; 
+		background:#FFBA24;}
+.gltop1{ width:97px; 
+         height:100px; 
+		 float:left;
+		 position:relative;}
+.gltop2{ width:90px; 
+         height:100px; 
+		 margin-left:99px; 
+		 position:relative;}
+.gltopp1{ position:absolute; 
+          margin-top:20px; 
+		  margin-left:25px;}
+.gltopp2{ position:absolute; 
+          margin-top:70px; 
+		  margin-left:9px;}
+.gltopp2>a{ color:#FFF; 
+            font-weight:bold; 
+			font-size:14px; 
+			text-decoration:none;}
+.gltopp1:hover{ transition:0.5s; 
+                transform:rotate(360deg);}		 			 
+.glbottom{ width:190px; 
+           height:318px; 
+		   background:#FEDA60; 
+		   	 position:relative;}	 
+.glbimg{ width:190px; 
+         height:145px; 
+		 position:absolute; 
+		 margin-top:30px; 
+		 text-align:center;}
+.glbimg:hover{ transition:0.5s; 
+               margin-left:-5px;}	
+.glbbg{ width:190px; 
+        height:10px; 
+		position:absolute; 
+		margin-top:195px; 
+		background:url(images/bigBg.png) no-repeat; 
+		background-position:-217px -863px;}
+.gz{ width:403px; 
+     height:418px; 
+	 float:left;}
+.gr{ width:604px; 
+     height:418px; 
+	 margin-left:593px;}
+.gr li{ height:209px; 
+        width:200px; 
+		outline:1px solid #E4E4E4; 
+		float:left;}
+.gr-1>a{ font-size:14px; 
+         color:#333;
+         font-weight:bold; 
+		 text-decoration:none;}
+.gr-1{ text-align:center; 
+       margin-top:30px;}
+.gr-2{ text-align:center;}
+.gr-3{ text-align:center; 
+       margin-top:5px;}
+.gr-3:hover{ transition:0.5s; 
+             margin-left:-5px;}	  
+.gr-2>a{ font-size:14px; 
+         color:#333; 
+		 text-decoration:none; }
+		 
+.gl2{ width:190px; 
+     height:420px; 
+	 float:left; 
+	 margin:0 auto;}
+.gl2top{ width:190px; 
+        height:100px; 
+		background:#FF5C2B;}
+.gl2top1{ width:97px; 
+         height:100px; 
+		 float:left;
+		 position:relative;}
+.gl2top2{ width:90px; 
+         height:100px; 
+		 margin-left:99px; 
+		 position:relative;}
+.gl2topp1{ position:absolute; 
+          margin-top:20px; 
+		  margin-left:25px;}
+.gl2topp2{ position:absolute; 
+          margin-top:70px; 
+		  margin-left:9px;}
+.gl2topp2>a{ color:#FFF; 
+            font-weight:bold; 
+			font-size:14px; 
+			text-decoration:none;}
+.gl2topp1:hover{ transition:0.5s; 
+                transform:rotate(360deg);}		 			 
+.gl2bottom{ width:190px; 
+           height:318px; 
+		   background:#FF9767; 
+		   	 position:relative;}	 
+.gl2bimg{ width:190px; 
+         height:145px; 
+		 position:absolute; 
+		 margin-top:30px; 
+		 text-align:center;}
+.gl2bimg:hover{ transition:0.5s; 
+               margin-left:-5px;}	
+.gl2bbg{ width:190px; 
+        height:10px; 
+		position:absolute; 
+		margin-top:195px; 
+		background:url(images/bigBg.png) no-repeat; 
+		background-position:-217px -863px;}
+.gz2{ width:403px; 
+     height:418px; 
+	 float:left;}
+.gr2{ width:604px; 
+     height:418px; 
+	 margin-left:593px;}
+.gr2-1{ width:201.3px; 
+        height:418px; 
+		float:left;}
+.gr2-1a{ width:202px; 
+         height:254px; 
+		 position:relative;  
+		 border:1px solid #E4E4E4;}
+.gr2-1b{ width:202px; 
+         height:165px; 
+		 border:1px solid #E4E4E4;}
+.gr2-1aa{ position:absolute; 
+          margin-top:20px; 
+		  margin-left:35px;}
+.gr2-1aa>a{ text-decoration:none; 
+            font-size:14px; 
+			font-weight:bold; 
+			color: #000;}
+.gr2-1ab{ position:absolute; 
+          margin-top:40px; 
+		  margin-left:2px;}
+.gr2-1ab>a{ text-decoration:none; 
+            font-size:14px; 
+			color: #222;}
+.gr2-1ac{ position:absolute; 
+          margin-left:30px; 
+		  margin-top:70px;}
+.gr2-1ac:hover{ transition:0.5px; 
+                margin-left:25px;}	
+		  
+.gr2-1ba{ position:absolute; 
+          margin-top:20px; 
+		  margin-left:70px;}
+.gr2-1ba>a{ text-decoration:none; 
+            font-size:14px; 
+			font-weight:bold; 
+			color: #000;}
+.gr2-1bb{ position:absolute; 
+          margin-top:40px; 
+		  margin-left:55px;}
+.gr2-1bb>a{ text-decoration:none; 
+            font-size:14px; 
+			color: #222;}
+.gr2-1bc{ position:absolute; 
+          margin-left:35px; 
+		  margin-top:65px;}
+.gr2-1bc:hover{ transition:0.5px; 
+                margin-left:30px;}
+.gr2-1p{ position:absolute; 
+          margin-top:80px; 
+		  margin-left:70px;}
+.gr2-1p>a{ text-decoration:none; 
+            font-size:14px; 
+			font-weight:bold; 
+			color: #000;}
+.gr2-1p2{ text-align:center; 
+          margin-top:130px;}
+.gr2-1p2:hover{ transition:0.5px; 
+                margin-left:-5px;}
+		  
+.gr2-1ca{ position:absolute; 
+          margin-top:20px; 
+		  margin-left:70px;}
+.gr2-1ca>a{ text-decoration:none; 
+            font-size:14px; 
+			font-weight:bold; 
+			color: #000;}
+.gr2-1cb{ position:absolute; 
+          margin-top:40px; 
+		  margin-left:55px;}
+.gr2-1cb>a{ text-decoration:none; 
+            font-size:14px; 
+			color: #222;}
+.gr2-1cc{ position:absolute; 
+          margin-left:35px; 
+		  margin-top:65px;}
+.gr2-1cc:hover{ transition:0.5px; 
+                margin-left:30px;}
+.gg3{ width:1200px; 
+      height:470px; 
+	  margin-top:30px;}
+.g3t{ width:1200px; 
+     height:50px; 
+	 position:relative; }
+.g3t1{ width:600px; 
+      height:50px; }
+.g3timg{ width:220px; 
+        height:50px; }
+.g3ttext{ width:196px; 
+         height:50px; 
+		 font-size:15px; 
+		 margin-top:-50px; 
+		 margin-left:300px;}
+.g4ttext{margin-left:290px; 
+         width:230px;}		 
+.g3ttext>a{ line-height:65px; 
+           color:#555;}
+.g3l{ width:190px; 
+     height:420px; 
+	 float:left; 
+}
+.g3ltop{ width:190px; 
+        height:100px; 
+		background:#62C751;}
+.g4ltop{background:#1BA5E4;}
+.g5ltop{background:#ABD738;}
+.g3ltop1{ width:97px; 
+         height:100px; 
+		 float:left;
+		 position:relative;}
+.g3ltop2{ width:90px; 
+         height:100px; 
+		 margin-left:99px; 
+		 position:relative;}
+.g3ltopp1{ position:absolute; 
+          margin-top:20px; 
+		  margin-left:25px;}
+.g3ltopp2{ position:absolute; 
+          margin-top:70px; 
+		  margin-left:9px;}
+.g3ltopp2>a{ color:#FFF; 
+            font-weight:bold; 
+			font-size:14px; 
+			text-decoration:none;}
+.g4ltopp2{ margin-left:20px;}
+.g6ltopp2>a{ margin-left:10px; 
+           font-size:12px;}
+.g3ltopp1:hover{ transition:0.5s; 
+                transform:rotate(360deg);}		 			 
+.g3lbottom{ width:190px; 
+           height:318px; 
+		   background:#9DE090; 
+		   	 position:relative;}
+.g4lbottom{ background:#55CDF0;} 
+.g5lbottom{ background:#D2EA78;} 
+.g3lbimg{ width:190px; 
+         height:145px; 
+		 position:absolute; 
+		 margin-top:30px; 
+		 text-align:center;}
+.g3lbimg:hover{ transition:0.5s; 
+               margin-left:-5px;}	
+.g3lbbg{ width:190px; 
+        height:10px; 
+		position:absolute; 
+		margin-top:175px; 
+		background:url(images/bigBg.png) no-repeat; 
+		background-position:-217px -863px;}
+.g3lbtext{ width:190px; 
+           height:130px; 
+		   position:absolute; 
+		   margin-top:190px;} 
+.g3lbtext>div{ width:80px; 
+               height:90px; 
+			   float:left; 
+			   margin:0 auto; 
+			   margin-top:20px; 
+			   margin-left:10px;}
+.g3lbtext a{ font-size:12px; 
+             font-weight:bold; 
+			 color:#FFF; 
+			 text-decoration:none;}
+.g3lbtext a:hover{ text-decoration:underline;}
+.g3z{ width:403px; 
+     height:418px; 
+	 float:left;}
+.g3r{ width:604px; 
+     height:418px; 
+	 outline:1px solid #ccc;
+	 margin-left:593px; }
+.g3r1{ width:201px; 
+       height:418px; 
+	   float:left;
+	   outline:1px solid #ccc;}
+.g3r2{ width:201px; 
+       height:418px; 
+	   float:left;
+	   outline:1px solid #ccc;}
+.g3r3{ width:201px; 
+       height:418px; 
+	   outline:1px solid #ccc; 
+	   float:left;}
+.g3r1a{ width:201px; 
+        height:253px;
+		outline:1px solid #ccc;}
+.g3r1b{ width:201px; 
+        height:164px;
+		outline:1px solid #ccc;}
+.g3rr1{ text-align: center; 
+        margin-top:50px;}
+.g3rr1>a{ text-decoration:none; 
+          font-weight:bold; 
+		  color:#000;}
+.g3rr2{ text-align: center;}
+.g3rr2>a{ text-decoration:none; 
+          color:#222; 
+		  font-size:13px;}
+.g3rr3{ text-align: center;}
+.g3rr3>a{ text-decoration:none; 
+          color:#222; 
+		  font-size:15px;}
+.g3rr4{ text-align: center; 
+        margin-top:30px;}
+.g3r a:hover{ color:#F60;}
+.g3r img:hover{ transition:0.5s;
+                margin-left:-5px;}
+.g3r a{ text-decoration:none;}
+.j1{ margin-left:50px; 
+     position:absolute; 
+	 margin-top:30px;}
+.j1>a{ font-weight:bold; 
+		  color:#000;}
+.j2{ margin-left:28px; 
+     margin-top:60px; 
+	 position:absolute;}
+.j3{ margin-left:50px; 
+     position:absolute; 
+	 margin-top:20px;}
+.j3>a{ font-weight:bold; 
+		  color:#000;}
+.j4{ margin-left:28px; 
+     margin-top:50px; 
+	 position:absolute;}
+.z3{ margin-left:10px; 
+     font-size:14px;}
+.z5{ margin-left:5px;}
+.x1>a{ font-weight:bold; 
+       color:#000; 
+	   position:absolute;
+	   margin-top:30px; 
+	   margin-left:80px;}
+.x2>a{ font-size:12px; 
+       color:#222; 
+	   position:absolute; 
+	   margin-top:50px; 
+	   margin-left:50px;}
+.x3>a{ font-size:14px; 
+       position:absolute; 
+       margin-top:65px; 
+	   margin-left:80px; 
+	   color:#222;}
+.x4{ position:absolute; 
+     margin-top:85px; 
+	 margin-left:30px;}
+.x1a{ margin-left:-35px;}
+.x2a{ margin-left:30px;}
+.x11{ margin-left:-20px;}
+.x22{ margin-left:15px;}
+.x44{ margin-top:80px;}
+.x20{ margin-left:-20px;}
+.v1{ m}
+.biao{ width:1200px; 
+       height:700px; 
+	   margin-top:1100px;}
+.biao1{ width:1050px; 
+        height:150px; 
+		position:relative; 
+		border-bottom:1px solid#ccc; 
+		margin:0 auto;}
+.ku{ width:210px; 
+     height:55px; 
+	 position:absolute; 
+	 margin-top:47px; 
+	 float:left;}
+.ku2{ margin-left:210px;}	
+.ku3{ margin-left:420px;}
+.ku4{ margin-left:630px;}
+.ku5{ margin-left:840px;}
+.dimg{ width:55px; 
+       height:55px; 
+	   float:left; } 
+.biaotext{ width:155px; 
+           height:55px; 
+		   margin-left:55px; }
+.biaoli1{ font-size:24px;}
+.biaoli2{ font-size:18px;}
+.biaotext li{ line-height:27px;}
+.biao2{ width:1200px; 
+        height:230px; 
+		position:relative; 
+		border-bottom:1px solid #ccc;
+		}
+.wei30{ width:1200px; 
+        height:200px; 
+		position:absolute; 
+		margin-top:30px;}
+.weilogo{ width:190px; 
+          height:160px; 
+		  float:left;}
+.weitext{ width:705px; 
+          height:168px; 
+		  float:left; }
+.weitext1{ width:605px; 
+           height:168px; 
+		   margin:0 auto;}
+.weitext1>div{ width:121px; 
+               height:168px; 
+			   float:left;}
+.weier{ width:115px; 
+        height:137px; 
+		float:left; }
+.weitb{ width:140px; 
+        height:131px; 
+		float:left; 
+		margin-left:50px;}
+.weitb li{ width:70px; 
+           height:65px; 
+		   float:left;}
+.weitb li a{ text-decoration:none; 
+             font-size:14px; 
+			 color:#777;}
+.weitext1 a{ line-height:23px;  
+             text-decoration:none;
+			 color:#777;}
+.weitext1 a:hover{ color:#F60;}
+.weitext1a{ font-size:18px;}
+.weide{ width:1200px; 
+        height:120px; }
+.weide1{ font-size:16px; 
+         color:#222;}
+.weide li{ font-size:13px; 
+           color:#777;}
+.weide li>a{ text-decoration:none; 
+             font-size:12px; 
+			 line-height:30px; 
+			 color:#777;}
+.weide li>a:hover{ color:#F60; 
+                   text-decoration:underline;}
+.weigg{ width:1200px; 
+       height:40px; }
+.weigga{ width:250px; 
+         height:40px;  
+		 margin:0 auto;}
+.weigga{ color:#777; 
+        line-height:40px;}
+.weigga>a{ text-decoration:none; 
+           font-size:14px; 
+		   color:#777;}
+.weigga>a:hover{ color:#F60;}
+.weigg1{ width:1200px; 
+         height:30px; 
+		 line-height:30px; 
+		 color:#777; 
+		 text-align:center; }
+.weigg2{ width:1200px; 
+         height:100px; 
+		 margin-top:30px; 
+		 text-align:center;}
+.weigg2 img{ width:130px;
+             height:40px;}	
+.weitb li a>img:hover{ transition:0.5s;
+                 transform:rotate(360deg);}	
+</style>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+       <div class="header-1">
+         <div class="header-left">
+             <span class="sp1">
+                <div class="bg1"></div>
+                <a href="#">收藏欢go网</a>
+             </span>
+             <span class="sp2">
+                  <span class="sp2-1">欢迎来到欢go网站</span>
+                  <a href="#">登录</a>
+             </span>
+         </div>
+         <div class="header-right">
+             <div class="hr hr1">
+                 <div class="hr1a"></div>
+                 <div class="hr1b"><a href="#">我的欢go</a></div>
+                 <div class="hr1c"></div>
+                 <div class="hr1h">
+                     <div class="hr11">
+                       <div class="hr1a"></div>
+                       <div class="hr1b"><a href="#">我的欢go</a></div>
+                       <div class="hr1c hr1c1"></div>
+                     </div>
+                     <div class="hr12">
+                       <div class="hr1hd"><a href="#">我的订单</a></div>
+                     </div>
+                 </div>
+             </div>
+             <div class="hr hr2">|</div>
+             <div class="hr hr3">
+                  <div class="hr3a"></div>
+                  <div class="hr3b">
+                     <a href="#">欢go客户端</a>
+                  </div>
+                  <div class="hr3h">
+                      <img src="images/app189.jpg"/>
+                  </div>
+             </div>
+             <div class="hr hr2">|</div>
+             <div class="hr hr5">
+                  <div class="hr5a"></div>
+                  <div class="hr5b"><a href="">189邮箱</a></div>
+             </div>
+             <div class="hr hr2">|</div>
+             <div class="hr hr7">
+                  <div class="hr7a"></div>
+                  <div class="hr7b"><a href="">政企客户</a></div>
+             </div>
+             <div class="hr hr2">|</div>
+             <div class="hr hr9">
+                 <div class="hr9a"></div>
+                 <div class="hr9b"><a href="#">消费者帮助中心</a></div>
+                 <div class="hr9h">
+                       <div class="hr9a"></div>
+                       <div class="hr9b"><a href="#">消费者帮助中心</a></div>
+                       <div class="hr9h1"><a href="#"><img src="images/cost.jpg"/></a></div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    </div>
+    <!--头部结束-->
+    <!--logo-->
+    <div class="logo">
+         <span class="logo-left"><img src="images/logo.png"/></span>
+         <div class="logo-2"><a href="#">江西</a>
+             <div class="logo-2-hidden">
+                <ul>
+                    <li class="zm">A-G</li>
+                    <li class="dq">
+                                   <a href="#">北京</a>
+                                   <a href="#">安徽</a>
+                                   <a href="#">重庆</a>
+                                   <a href="#">福建</a>
+                                   <a href="#">广东</a>
+                                   <a href="#">甘肃</a>
+                                   <a href="#">广西</a>
+                                   <a href="#">贵州</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="zm">H-J</li>
+                    <li class="dq">
+                                   <a href="#">湖北</a>
+                                   <a href="#">湖南</a>
+                                   <a href="#">河北</a>
+                                   <a href="#">河南</a>
+                                   <a href="#">海南</a>
+                                   <a href="#">黑龙江</a>
+                                   <a href="#">江苏</a>
+                                   <a href="#">吉林</a>
+                                   <a href="#">江西</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="zm">L-S</li>
+                    <li class="dq">
+                                   <a href="#">辽宁</a>
+                                   <a href="#">内蒙古</a>
+                                   <a href="#">宁夏</a>
+                                   <a href="#">青海</a>
+                                   <a href="#">山东</a>
+                                   <a href="#">上海</a>
+                                   <a href="#">山西</a>
+                                   <a href="#">四川</a>
+                                   <a href="#">陕西</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="zm">T-Z</li>
+                    <li class="dq">
+                                   <a href="#">天津</a>
+                                   <a href="#">新疆</a>
+                                   <a href="#">西藏</a>
+                                   <a href="#">云南</a>
+                                   <a href="#">浙江</a>
+
+                    </li>
+                </ul>
+             </div>
+         </div> 
+         <div class="rescher">
+             <div class="rescher-top">
+                <div class="rescher-top-a">
+                         <a href="#rt1"><div id="rt1">搜产品</div></a>
+                         <a href="#rt2"><div id="rt2">搜帮助</div></a>
+                </div>
+             </div>
+             <div class="rescher-zhong">
+                  <div class="re1"></div>
+                  <div class="re2">
+                        <input style="width:386px; height:30px; border:0px; outline:0px;"/>
+                  </div>
+                  <div class="re3"><a>搜索</a></div>
+             </div>
+             <div class="rescher-bottom">
+                   <ul>
+                       <li>
+                            <a href="#">9元卡</a>
+                            <a href="#">靓号</a>
+                            <a href="#">智能</a>
+                       </li>
+                       <li>
+                            <span><a href="#" id="sa1">【融合宽带】宽带28元/月</a></span>
+                            <span><a href="#" id="sa2">【大王卡】首充50送50</a></span>
+                            <span><a href="#" id="sa1">【日租卡】预存30得60</a></span> 
+                            <span><a href="#" id="sa2">【单宽新装】送ITV</a></span>
+                       </li>
+                       <li>
+                            <a href="#">9元卡</a>
+                            <a href="#">靓号</a>
+                            <a href="#">智能</a>
+                       </li>
+             </div>
+         </div>
+         <div class="logo-right">
+              <ul>
+                  <li><img src="电信素材包/images/head61.jpg"/></li>
+                  <li><img src="素材/ade573a3-d615-4e63-9176-48798f564ed4.jpg"/></li>
+              </ul>
+         </div>
+    </div>
+    <!--logo结束-->
+    <!--导航开始-->
+    <div class="nav">
+       <div class="nav1">
+           <span class="nava1"></span>
+           <div class="nava2"> 
+               <ul>
+                   <li style="margin-left:20px;">
+                      <div class="nava2-1"></div>
+                      <a href="#" class="nava2-a">首页</a>
+                   </li>
+                   <li>
+                      <div class="nava2-1 nava2-hi"></div>
+                      <a href="#" class="nava2-a">流量</a>
+                   </li>
+                   <li>
+                      <div class="nava2-1 nava2-hi"></div>
+                      <a href="#" class="nava2-a">宽带光钎</a>
+                   </li>
+                   <li>
+                      <div class="nava2-1 nava2-hi"></div>
+                      <a href="#" class="nava2-a">老用户</a>
+                   </li>
+                   <li>
+                      <div class="nava2-1 nava2-hi"></div>
+                      <a href="#" class="nava2-a">自助服务</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="nava3">
+               <div class="nava3-1"></div>
+               <div class="nava3-2"><a href="#">登录</a></div>
+           </div>
+       </div>
+    </div>
+    <!--导航结束-->
+    <!--主体部分开始-->
+    <div class="main">
+       <div class="maina">
+         <div class="main-left">
+             <ul>
+                 <li class="mf1"><a href="#">手机</a>
+                       <div class="mf1-hi">
+                            <ul>
+                                 <li>
+                                    <div class="mf1-a">新品</div>
+                                    <div class="mf1-b">
+                                    <a href="#">iphoneX</a> | 
+                                    <a href="#">红米5A</a> | 
+                                    <a href="#">nova2s</a> | 
+                                    <a href="#">畅想7S</a> | 
+                                    <a href="#">iphone8</a> |</div>
+                                 </li>
+                                 <li> 
+                                    <div class="mf1-a">特价</div>
+                                    <div class="mf1-b">
+                                    <a href="#">iphone7</a> | 
+                                    <a href="#">小海豚pro</a> | 
+                                    <a href="#">E133X</a> | 
+                                    <a href="#">红米5pius</a> | 
+                                    <a href="#">畅玩7X</a> |</div>
+                                 </li>
+                                 <li>
+                                    <div class="mf1-a">品牌</div>
+                                    <div class="mf1-b">
+                                    <a href="#">苹果</a> | 
+                                    <a href="#">华为</a> |
+                                    <a href="#">三星</a> | 
+                                    <a href="#">魅族</a> | 
+                                    <a href="#">小米</a> |
+                                    <a href="#">OPPO</a> | 
+                                    <a href="#">VIVO</a> |
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="mf1-a">价格</div>
+                                    <div class="mf1-b">
+                                    <a href="#">1000元以下</a> | 
+                                    <a href="#">1000元</a> | 
+                                    <a href="#">2000元</a> | 
+                                    <a href="#">3000元</a> | 
+                                    <a href="#">4000元以上</a> |</div>
+                                 </li>
+                                 <li>
+                                    <div class="mf1-a">系统</div>
+                                    <div class="mf1-b">
+                                    <a href="#">其他系统</a> | 
+                                    <a href="#">安卓</a> | 
+                                    <a href="#">IOS</a> |</div>
+                                 </li>
+                                 <li>
+                                    <div class="mf1-a">屏幕尺寸</div>
+                                    <div class="mf1-b">
+                                    <a href="#">3.0英寸及以下</a> | 
+                                    <a href="#">3.1-4.5英寸</a> | 
+                                    <a href="#">4.6-5.0英寸</a> |
+                                    <a href="#">5.0-5.5英寸</a> |</div>
+                                 </li>
+                                 <div>
+                                    <div class="mf1-c">类型</div>
+                                 </div> 
+                                 <div class="a360">
+                                        <a href="#"><div class="a360-1"><img src="电信素材包/images/360-1.jpg"/></div></a>
+                                        <a href="#"><div class="a360-2"><img src="电信素材包/images/360-2.jpg"/></div></a>  
+                                 </div>                    
+                            </ul>
+                       </div> 
+                 </li>
+                 <li class="mf2"><a href="#">套餐/靓号</a>
+                     <div class="mf2-a">
+                       <div class="mf21"> 
+                           <div class="mf21-a">号码</div>
+                           <div class="mf21-b">
+                                 <a href="#" class="mf21-b-1">199</a>|
+                                 <a href="#" class="mf21-b-1">173</a>|
+                                 <a href="#" class="mf21-b-2">189</a>|
+                                 <a href="#" class="mf21-b-2">177</a>|
+                                 <a href="#" class="mf21-b-2">181</a>|
+                                 <a href="#" class="mf21-b-2">180</a>|
+                                 <a href="#" class="mf21-b-2">133</a>|
+                                 <a href="#" class="mf21-b-2">153</a>|
+                           </div>
+                       </div>
+                       <div class="mf22">
+                           <div class="mf22-a">套餐</div>
+                           <div class="mf22-b">
+                                 <ul>
+                                     <li>
+                                          <div class="mf22-b-1"><a href="#">【28元融合套餐】</a></div>
+                                          <div class="mf22-b-2"><a href="#">10GB达量降速+100分钟语音+60M宽带+必选ITV|</a></div>
+                                     </li>
+                                     <li>
+                                          <div class="mf22-b-1"><a href="#">【38元融合套餐】</a></div>
+                                          <div class="mf22-b-2"><a href="#">20GB达量降速+220分钟语音+200M宽带+必选ITV|</a></div>
+                                     </li>
+                                     <li>
+                                          <div class="mf22-b-1"><a href="#">【58元融合套餐】</a></div>
+                                          <div class="mf22-b-2"><a href="#">40GB达量降速+600分钟语音+200M宽带+ITV首年免费送|</a></div>
+                                     </li>
+                                     <li>
+                                          <div class="mf22-b-1"><a href="#">【88元融合套餐】</a></div>
+                                          <div class="mf22-b-2"><a href="#">40GB达量降速+1500分钟语音+200M宽带+ITV首年免费送|</a></div>
+                                     </li>
+                                     <li>
+                                          <div class="mf22-b-1 mf22-b-3"><a href="#">【9元日租卡 预存30元得60元】</a></div>
+                                          <div class="mf22-b-2"><a href="#">国内流量1元800M+100分钟语音+免视频定向流量|</a></div>
+                                     </li>
+                                     <li>
+                                          <div class="mf22-b-1 mf22-b-3"><a href="#">【3元大王卡 首充50元送50元 】</a></div>
+                                          <div class="mf22-b-2"><a href="#">海量应用免流量+100分钟语音+送优酷视频会员|</a></div>
+                                     </li>
+                                     <li>
+                                          <div class="mf22-b-1 mf22-b-3"><a href="#">【全能副卡】</a></div>
+                                          <div class="mf22-b-2"><a href="#">0预存款 共享套餐内语音和流量|</a></div>
+                                     </li>
+                                 </ul>
+                           </div>
+                       </div>
+                       <div class="mf23">
+                           <div class="mf23-a">号码类型</div>
+                           <div class="mf23-b">
+                                 <a href="#" class="mf23-b-1">0元靓号</a>|
+                                 <a href="#" class="mf23-b-1">事业靓号</a>|
+                                 <a href="#" class="mf23-b-1">爱情靓号</a>|
+                                 <a href="#" class="mf23-b-1">精选靓号</a>|
+                                 <a href="#" class="mf23-b-2">199靓号</a>|
+                                 <a href="#" class="mf23-b-2">177靓号</a>|
+                           </div>
+                       </div>
+                       <div class="mf24">
+                           <div class="img1"><a href="#"><img src="电信素材包/daw.jpg"/></a></div>
+                           <div class="img2"><a href="#"><img src="电信素材包/images/360-1.jpg"/></a></div>
+                       </div>
+                       <div></div>
+                     </div>
+                 </li>
+                 <li class="mf3"><a href="#">宽带</a>
+                     <div class="mf3-a">
+                          <div class="mf3-a1">宽带爆款</div>
+                          <div class="mf3-a2">
+                               <div class="mf3-aa">宽带新装</div>
+                               <div class="mf3-ab">
+                                   <div>
+                                        <div class="ab1"><a href="#">【60M融合宽带】</a></div>
+                                        <div class="ab2"><a href="#">10GB达量降速+100分钟语音+ITV(必选)|</a></div>
+                                   </div>
+                                   <div>
+                                        <div class="ab1"><a href="#">【200M融合宽带】</a></div>
+                                        <div class="ab2"><a href="#">20GB达量降速+220分钟语音+ITV(必选)|</a></div>
+                                   </div>
+                                   <div>
+                                        <div class="ab1"><a href="#">【200M融合宽带】</a></div>
+                                        <div class="ab2"><a href="#">40GB达量降速+600分钟语音+ITV（免费12个月）|</a></div>
+                                   </div>
+                                   <div>
+                                        <div class="ab-1">
+                                        <div class="ab1 ab3"><a href="#">【50M单宽带】</a>
+                                        <a href="#" style="font-size:14px; color:#999;">包年送智能ITV|</a></div>
+                                        </div>
+                                        <div>
+                                        <div class="ab1 ab3"><a href="#">【100M单宽带】</a></div>
+                                        <div class="ab2"><a href="#">包年送智能ITV|</a></div>
+                                        </div>
+                                   </div>
+                               </div>
+                          </div>
+                          <div class="mf3-a3">
+                              <div class="mf3-a31">宽带老用户</div>
+                              <div class="mf3-a32">
+                                         <div class="mf3li1"><a href="#">宽带续约 专享折扣</a>|</div>
+                                         <div class="mf3li2"><a href="#">宽带缴费</a>|</div>
+                                         <div class="mf3li3"><a href="#">单宽老用户免费领取福利</a>|</div>
+                              </div>
+                          </div>
+                          <div class="mf3-a4">
+                              <div class="mf3-a41">电视老用户</div>
+                              <div class="mf3-a42">
+                                         <div class="mf4li1"><a href="#">翼网打尽</a>|</div>
+                                         <div class="mf4li2"><a href="#">电信电视 特惠办理</a>|</div>
+                                         <div class="mf4li3"><a href="#">ITV增值业务查询与办理</a>|</div>
+                              </div>
+                          </div>
+                          <div class="mf3-a5">
+                               <div class="mf3-a5a">尊享服务</div>
+                               <div class="mf3-a5b">
+                                     <ul>
+                                         <li>
+                                             <a href="#" style="color:#F00;">宽带移机预约</a>|
+                                             <a href="#" style="color:#F00;">10000号电脑家|</a>|
+                                             <a href="#" style="color:#F00;">宽带密码重置</a>|
+                                             <a href="#" style="color:#F00;">宽带排障</a>|
+                                         </li>
+                                         <li>
+                                             <a href="#" style="color:#F00;">宽带欠费绿色开机</a>|
+                                             <a href="#" style="color:#F00;">装移机进度查询 </a>|
+                                             <a href="#" style="color:#F00;">宽带测速</a>|
+                                             <a href="#" style="color:#F00;">绿色上网</a>|
+                                             <a href="#" style="color:#555;">wifi设置</a>|
+                                         </li>
+                                         <li>
+                                             <a href="#" style="color:#555;">宽带卡激活</a>|
+                                             <a href="#" style="color:#555;">光小区查询</a>|
+                                             <a href="#" style="color:#555;">选宽带／电路开通透明化</a>|
+                                         </li>
+                                     </ul>
+                               </div>
+                          </div>
+                          <div class="mf3-end">
+                              <div><a href="#"><img src="images/kjk.jpg"/></a></div>
+                              <div class="mf3-end2"><a href="#"><img src="images/kisk.jpg"/></a></div>
+                          </div>
+                     </div>
+                 </li>
+                 <li class="mf4"><a href="#">智能</a>
+                      <div class="mf4-a">
+                          <div class="mf41"> 
+                             <div class="mf41-a">手机配件</div>
+                             <div class="mf41-b">
+                                 <a href="#" class="mf41-b-1">移动电源</a>|
+                                 <a href="#" class="mf41-b-1">内存卡</a>|
+                                 <a href="#" class="mf41-b-2">手机膜</a>|
+                                 <a href="#" class="mf41-b-2">耳机</a>|
+                             </div>
+                          </div>
+                          <div class="mf42"> 
+                             <div class="mf42-a">智能设备</div>
+                             <div class="mf42-b">
+                                 <a href="#" class="mf42-b-1">机顶盒</a>|
+                                 <a href="#" class="mf42-b-1">摄像头</a>|
+                                 <a href="#" class="mf42-b-2">智能相框</a>|
+                             </div>
+                          </div>
+                          <div class="mf43"><a href="#"><img src="电信素材包/images/vrglass.jpg"/></a></div>
+                 </li>
+                 <li class="mf5"><a href="#">话费</a>
+                      <div class="mf5a">
+                           <div class="mf5a-1">
+                                 <div class="mf5a-1a">购买充值卡</div>
+                                 <div class="mf5a-1b">
+                                        <a href="#" style="color:#F00;">手机话费充值995折</a>|
+                                        <a href="#" style="color:#F00;">手机流量充值</a>|
+                                        <a href="#">宽带充值</a>|
+                                        <a href="#">固话充值</a>|
+                                 </div>
+                           </div>
+                           <div class="mf5a-2">
+                                 <div class="mf5a-2a">充值卡充值</div>
+                                 <div class="mf5a-2b">
+                                        <a href="#">充值卡充值</a>|
+                                        <a href="#">流量卡充值</a>|
+                                 </div>
+                           </div>
+                           <div class="mf5a-3">
+                                 <div class="mf5a-3a">银行卡充值</div>
+                                 <div class="mf5a-3b">
+                                        <a href="#" style="color:#F00;">支付宝支付</a>|
+                                        <a href="#" style="color:#F00;">微信支付</a>|
+                                        <a href="#" style="color:#F00;">百度钱包</a>|
+                                        <a href="#">银行卡充值</a>|
+                                 </div>
+                           </div>
+                           <div class="mf5a-4">
+                                 <div class="mf5a-4a">翼支付</div>
+                                 <div class="mf5a-4b">
+                                       <a href="#" style="color:#F00;">积分兑换20元话费</a>|
+                                       <a href="#" style="color:#F00;">积分兑换30元话费</a>|
+                                       <a href="#" style="color:#F00;">积分兑换50元话费</a>|<br>
+                                               
+                                       <a href="#" style="color:#F00;">积分兑换100元话费</a>|        
+                                       <a href="#" style="color:#F00;">积分兑换天翼智能组网</a>|
+                                       <a href="#">交费助手充值</a>|
+                                 </div>
+                           </div>
+                      </div>       
+                 </li>
+                 <li class="mf6"><a href="#">费用</a>
+                        <div class="mf6a">
+                             <div class="mf6a-1"> 
+                                  <div class="mf6a-1a">我的话费</div>
+                                  <div class="mf6a-1b">
+                                       <a href="#" style="color:#F00;">余额查询</a>|
+                                       <a href="#" style="color:#F00;">实时话费查询</a>|
+                                       <a href="#" style="color:#F00;">账单查询</a>|
+                                       <a href="#" style="color:#F00;">充值记录查询</a>|        
+                                       <a href="#" style="color: #00F;">余额变动明细</a>|<br>
+                                       <a href="#" style="color: #00F;">话费返还查询</a>|
+                                       <a href="#">欠费查询</a>|
+                                 </div>
+                             </div>
+                             <div class="mf6a-2"> 
+                                  <div class="mf6a-2a">我的业务</div>
+                                  <div class="mf6a-2b">
+                                       <a href="#" style="color:#F00;">电信合伙人</a>|
+                                       <a href="#" style="color:#F00;">我的欢Go</a>|
+                                       <a href="#" style="color:#F00;">我的流量</a>|
+                                       <a href="#" style="color:#00F;">套餐使用情况</a>|        
+                                       <a href="#" style="color: #00F;">星级服务</a>|
+                                       <a href="#" style="color: #00F;">积分兑换</a>|<br>
+                                       <a href="#">电子发票</a>|
+                                       <a href="#">积分兑换记录</a>|
+                                 </div>
+                             </div>
+                             <div class="mf6a-3"> 
+                                  <div class="mf6a-3a">账单查询</div>
+                                  <div class="mf6a-3b">
+                                       <a href="#" style="color:#F00;">我的话费账单</a>|     
+                                 </div>
+                             </div>
+                             <div class="mf6a-4"> 
+                                  <div class="mf6a-4a">详细查询</div>
+                                  <div class="mf6a-4b">
+                                       <a href="#" style="color:#F00;">上网详单</a>| 
+                                       <a href="#" style="color:#F00;">语音详单</a>|
+                                       <a href="#" style="color:#F00;">短信详单</a>|    
+                                 </div>
+                             </div>
+                        </div>
+                 </li>
+                 <li class="mf7"><a href="#">业务</a>
+                       <div class="mf7a">
+                             <div class="mf7a-1"> 
+                                  <div class="mf7a-1a">详细查询</div>
+                                  <div class="mf7a-1b">
+                                       <a href="#" style="color:#F00;">【28元融合套餐】</a> 
+                                       <a href="#">10GB达量降速+100分钟语音+60M宽带+必选ITV|</a><br>
+                                       <a href="#" style="color:#F00;">【38元融合套餐】</a> 
+                                       <a href="#">20GB达量降速+220分钟语音+200M宽带+必选ITV|</a><br>
+                                       <a href="#" style="color:#F00;">【58元融合套餐】</a> 
+                                       <a href="#">40GB达量降速+600分钟语音+200M宽带+ITV首年免费送|</a><br>
+                                       <a href="#" style="color:#F00;">【88元融合套餐】</a> 
+                                       <a href="#">40GB达量降速+1500分钟语音+200M宽带+ITV首年免费送|</a><br>
+                                 </div>
+                             </div>
+                             <div class="mf7a-2"> 
+                                  <div class="mf7a-2a">流量包专区</div>
+                                  <div class="mf7a-2b">
+                                       <a href="#" style="color:#00F;">【7天包】20元包5GB</a>| 
+                                       <a href="#" style="color:#00F;">【3天包】15元包3GB</a>|
+                                       <a href="#" style="color:#00F;">【1天包】10元包2GB</a>|<br>
+                                       <a href="#" style="color:#F00;">流量提醒设置</a>|
+                                       <a href="#" style="color: #00F;">【按次加餐】10元包300M国内流量</a>|<br>
+                                       <a href="#" style="color: #00F;">【按次加餐】20元包1GB国内流量</a>|
+                                       <a href="#">10元包3GB全国深夜流量包</a>|<br>
+                                       <a href="#">20元包6GB全国深夜包</a>|
+                                 </div>
+                             </div>
+                             <div class="mf7a-3"> 
+                                  <div class="mf7a-3a"> 宽带特权</div>
+                                  <div class="mf7a-3b">
+                                       <a href="#" style="color:#F00;">宽带续约</a>|    
+                                 </div>
+                             </div>
+                             <div class="mf7a-4"> 
+                                  <div class="mf7a-4a">老用户专区</div>
+                                  <div class="mf7a-4b">
+                                       <a href="#" style="color:#F00;">我的积分</a>|
+                                       <a href="#">积分商城</a>|    
+                                 </div>
+                             </div>
+                             <div class="mf7a-5"> 
+                                  <div class="mf7a-5a">热门业务</div>
+                                  <div class="mf7a-5b">
+                                       <a href="#" style="color:#F00;">服务密码重置</a>|
+                                       <a href="#">开通国际/港澳台漫游</a>|
+                                       <a href="#">短信包月套餐</a>|
+                                       <a href="#">189邮箱</a>|        
+                                       <a href="#">交费助手</a>|<br>
+                                       <a href="#">添益宝</a>|
+                                 </div>
+                              <div>
+                              <div class="mf7a-6"> 
+                                  <div class="mf7a-6a">电视特权</div>
+                                  <div class="mf7a-6b">
+                                       <a href="#" style="color:#F00;">电信电视 特惠办理</a>|
+                                       <a href="#">ITV增值业务查询与办理</a>|    
+                                 </div>
+                             </div>
+                             <div class="mf7a-7"> 
+                                  <div class="mf7a-7a">行业应用</div>
+                                  <div class="mf7a-7b">
+                                       <a href="#">外勤助手</a>|
+                                       <a href="#">空中充值</a>|    
+                                 </div>
+                             </div>
+                             <div class="mf7-end">
+                              <div><a href="#"><img src="images/freeliuliang.jpg"/></a></div>
+                              <div class="mf7-end2"><a href="#"><img src="images/yyyyu.jpg"/></a></div>
+                          </div>
+                       </div>
+                 </li>
+             </ul>
+         </div>
+         <!--主体左部结束-->
+         <div class="main-ri">
+             <div class="mrt">
+                   <div class="mrt1">
+                        <div class="mrt1a">
+                             <div class="az1"><a href="#">欢享服务</a></div>
+                        </div>
+                        <div class="mrt1b">|</div>
+                   </div>
+                   <div class="mrt2">
+                             <div class="az1"><a href="#">超值购</a></div>
+                   </div>  
+             </div>
+             <div class="mrcen">
+                  <div class="mrca ca1 ca2">
+                      <div class="mrc1"><a href="#"><img src="images/huanxiang1.png"/></a></div>
+                      <div class="mrc2"><a href="#">星级服务</a></div>
+                  </div>
+                  <div class="mrca ca2">
+                       <div class="mrc1"><a href="#"><img src="images/huanxiang3.png"/></a></div>
+                      <div class="mrc2"><a href="#">积分商城</a></div>
+                  </div>
+                  <div class="mrca ca2">
+                       <div class="mrc1"><a href="#"><img src="images/huanxiang4.png"/></a></div>
+                      <div class="mrc2"><a href="#">余额查询</a></div>
+                  </div>
+                  <div class="mrca ca1">
+                        <div class="mrc1"><a href="#"><img src="images/huanxiang6.png"/></a></div>
+                      <div class="mrc2"><a href="#">充值记录</a></div>
+                  </div>
+                  <div class="mrca">
+                       <div class="mrc1"><a href="#"><img src="images/0d1da27f-3665-47d8-aa36-df3692ff0f21.png"/></a></div>
+                      <div class="mrc2"><a href="#">我的流量</a></div>
+                  </div>
+                  <div class="sx"></div>
+                  <div class="sd">
+                       <ul>
+                           <li class="sd1"><a href="#">手机</a> | </li> 
+                           <li><a href="#">流量</a> | </li> 
+                           <li><a href="#">宽带</a> | </li> 
+                           <li><a href="#">固话</a> | </li> 
+                       </ul>
+                  </div>
+                  <div class="dggcz">
+                       <div class="dggcz1">
+                             <label class="la1">
+                                <input name="1" type="radio" value="1" checked/><a>银行卡充值</a>
+                             </label>
+                       </div>
+                       <div class="dggcz2"> 
+                             <label class="la1">
+                                <input name="1" type="radio" value="1" checked/><a style="color:#222;">卡密充值</a>
+                             </label>
+                       </div>
+                  </div>
+                  <div class="dgghm">
+                       <div class="dm1"><a>号码</a></div>
+                       <div class="dm2"><input type="text" name="a1" id="a1" maxlength="11"/></div>
+                  </div>
+                  <div class="dgghm dgghm1">
+                       <div class="dm1"><a>金额</a></div>
+                       <div class="dm2 dm3"><input type="text" name="a1" id="a1" maxlength="11" placeholder="10元"/>
+                       <div class="dgghh">
+                            <ul>
+                                <li><a>100元</a></li>
+                                <li><a>10元</a></li>
+                                <li><a>200元</a></li>
+                                <li><a>20元</a></li>
+                                <li><a>300元</a></li>
+                                <li><a>30元</a></li>
+                                <li><a>500元</a></li>
+                                <li><a>50元</a></li>
+                            </ul>
+                       </div>   
+                  </div>
+                  </div>
+                  <div class="d2">
+                        <div class="d21"><a>立即充值</a></div>
+                        <div class="d22"><a>充值专区</a></div>
+                  </div>
+                  <div class="dgg">
+                       <div class="dgg1">
+                            <div class="ddg1a">公告：</div>
+                       </div>
+                       <div class="dgg2">
+                              <ul> 
+                                   <li><a href="#">2018年4月12日充值升级公告</a></li>
+                                   <li><a href="#">中国电信江西公司天翼高清增值业务合作引入流程公示</a></li>
+                                   <li><a href="#">中国电信股份有限公司江西分公司基站竣工验收报告</a></li>
+                                   <li><a href="#">2018年春节期间活动暂停及物流暂停通知</a></li>
+                                   <li><a href="#">小翼管家APP产品介绍</a></li>
+                                   <li><a href="#">2018年4月12日充值升级公告</a></li>
+                                   <li><a href="#">中国电信江西公司天翼高清增值业务合作引入流程公示</a></li>
+                                   <li><a href="#">中国电信股份有限公司江西分公司基站竣工验收报告</a></li>
+                                   <li><a href="#">2018年春节期间活动暂停及物流暂停通知</a></li>
+                                   <li><a href="#">小翼管家APP产品介绍</a></li>
+                              </ul>
+                       </div>
+                  </div>
+             </div>
+         </div>
+       </div>  
+    </div>
+    <!--腰部开始-->
+    <div class="yb">
+         <div class="yb-left">
+            <a href="#"><img src="images/cy.jpg"/></a>
+         </div>
+         <div class="yb-right">
+              <ul>
+                  <li>
+                    <div>
+                      <a href="#"><img src="images/z1.jpg"/></a>
+                      <a href="#"><img src="images/z2.jpg"/></a>
+                      <a href="#"><img src="images/z3.jpg"/></a>
+                      <a href="#"><img src="images/z4.jpg"/></a>
+                    </div>
+                    <div>
+                      <a href="#"><img src="images/z5.jpg"/></a>
+                      <a href="#"><img src="images/z6.jpg"/></a>
+                      <a href="#"><img src="images/z7.jpg"/></a>
+                      <a href="#"><img src="images/z8.jpg"/></a>
+                    </div>
+                  </li>
+                  <li>
+                      <div>
+                      <a href="#"><img src="images/sc1.jpg"/></a>
+                      <a href="#"><img src="images/a2.jpg"/></a>
+                      <a href="#"><img src="images/a3.jpg"/></a>
+                      <a href="#"><img src="images/a4.jpg"/></a>
+                    </div>
+                    <div>
+                      <a href="#"><img src="images/a5.jpg"/></a>
+                      <a href="#"><img src="images/a6.jpg"/></a>
+                      <a href="#"><img src="images/a7.jpg"/></a>
+                      <a href="#"><img src="images/a8.jpg"/></a>
+                    </div>
+                  </li>
+                  <li>
+                      <div>
+                      <a href="#"><img src="images/z1.jpg"/></a>
+                      <a href="#"><img src="images/z2.jpg"/></a>
+                      <a href="#"><img src="images/z3.jpg"/></a>
+                      <a href="#"><img src="images/z4.jpg"/></a>
+                    </div>
+                    <div>
+                      <a href="#"><img src="images/z5.jpg"/></a>
+                      <a href="#"><img src="images/z6.jpg"/></a>
+                      <a href="#"><img src="images/z7.jpg"/></a>
+                      <a href="#"><img src="images/z8.jpg"/></a>
+                    </div>
+                  </li>
+              </ul>
+              <div class="tup1"></div>
+              <div class="tup2"></div>
+         </div>
+    </div>
+         <!--腰部结束-->
+         <!--下图一-->
+     <div class="gg">
+     <div class="gg1">
+          <div class="gt">
+              <div class="gt1">
+                <div class="gtimg">
+                     <img src="images/main_box1.png"/>
+                </div>
+                <div class="gttext">
+                    <a>好宝贝,够任性,就是要炫耀!</a>
+                </div>
+                </div>  
+          </div>
+          <div class="gl">
+                <div class="gltop">
+                      <div class="gltop1">
+                            <p class="gltopp1"><a href="#"><img src="images/dwk.png"/></a></p>
+                            <p class="gltopp2"><a href="#">首充50送50</a></p>
+                      </div>
+                      <div class="gltop2">
+                            <p class="gltopp1"><a href="#"><img src="images/rzk.png"/></a></p>
+                            <p class="gltopp2"><a href="#">预存30得60</a></p>
+                      </div>
+                </div>
+                <div class="glbottom">
+                    <div class="glbimg"><a href="#"><img src="images/qww.png"/></a></div>
+                    <div class="glbbg"></div>
+                    <div class="glbtext"></div>
+                </div>
+          </div>
+          <div class="gz">
+             <a href="#"><img src="images/po.jpg"/></a>
+          </div>
+          <div class="gr">
+                <ul>
+                     <li>
+                         <div class="gr-1"><a href="#">3元/月大王卡送优酷视频会员</a></div>
+                         <div class="gr-2"><a href="#">100分钟语音+预存30得80</a></div>
+                         <div class="gr-3"><a href="#"><img src="images/aq1.jpg"/></a></div>
+                     </li>
+                      <li>
+                         <div class="gr-1"><a href="#">9元/月日租卡免费定向视频</a></div>
+                         <div class="gr-2"><a href="#">100分钟语音+预存30得60</a></div>
+                         <div class="gr-3"><a href="#"><img src="images/aq2.jpg"/></a></div>
+                     </li>
+                      <li>
+                         <div class="gr-1"><a href="#">9元卡</a></div>
+                         <div class="gr-3"><a href="#"><img src="images/aq3.jpg"/></a></div>
+                     </li>
+                      <li>
+                         <div class="gr-1"><a href="#">28元融合宽带</a></div>
+                         <div class="gr-2"><a href="#">畅享10G+100分钟语音+ITV</a></div>
+                         <div class="gr-3"><a href="#"><img src="images/aq4.jpg"/></a></div>
+                     </li>
+                      <li>
+                         <div class="gr-1"><a href="#">38元融合宽带</a></div>
+                         <div class="gr-2"><a href="#">畅享20G+220分钟语音+ITV</a></div>
+                         <div class="gr-3"><a href="#"><img src="images/aq5.jpg"/></a></div>
+                     </li>
+                      <li>
+                         <div class="gr-1"><a href="#">58元融合宽带</a></div>
+                         <div class="gr-2"><a href="#">畅享40G+600分钟+一年免费ITV</a></div>
+                         <div class="gr-3"><a href="#"><img src="images/aq6.jpg"/></a></div>
+                     </li>
+                </ul>
+          </div>
+     </div>
+     
+     <div class="gg">
+     <div class="gg1">
+          <div class="gt">
+              <div class="gt1">
+                <div class="gtimg">
+                     <img src="images/main_box21.png"/>
+                </div>
+                <div class="gttext" style="margin-left:300px;">
+                    <a>爱自己,爱生活,爱家庭!</a>
+                </div>
+                </div>  
+          </div>
+          <div class="gl2">
+                <div class="gl2top">
+                      <div class="gl2top1">
+                            <p class="gl2topp1"><a href="#"><img src="images/100kd.png"/></a></p>
+                            <p class="gl2topp2"><a href="#">50M单宽带</a></p>
+                      </div>
+                      <div class="gl2top2">
+                            <p class="gl2topp1"><a href="#"><img src="images/NEW.png"/></a></p>
+                            <p class="gl2topp2"><a href="#">100M单宽带</a></p>
+                      </div>
+                </div>
+                <div class="gl2bottom">
+                    <div class="gl2bimg"><a href="#"><img src="images/bnyx.png"/></a></div>
+                    <div class="gl2bbg"></div>
+                    <div class="gl2btext"></div>
+                </div>
+          </div>
+          <div class="gz2">
+             <a href="#"><img src="images/360yn.jpg"/></a>
+          </div>
+          <div class="gr2">
+                <div class="gr2-1">
+                        <div class="gr2-1a">
+                             <p  class="gr2-1aa"><a href="#">宽带续约专享折扣</a></p>
+                             <p  class="gr2-1ab"><a href="#">续约只需一分钟 网上再降5个点</a></p>
+                             <p  class="gr2-1ac"><a href="#"><img src="images/zx1.jpg"/></a></p>
+                        </div>
+                        <div class="gr2-1b">
+                             <p  class="gr2-1ba"><a href="#">宽带提速</a></p>
+                             <p  class="gr2-1bb"><a href="#">宽带提速100M</a></p>
+                             <p  class="gr2-1bc"><a href="#"><img src="images/zx2.jpg"/></a></p>
+                        </div>
+                </div>
+                <div class="gr2-1" style="background:#F5F5F7";>
+                             <p  class="gr2-1p"><a href="#">提速降费</a></p>
+                             <p  class="gr2-1p2"><img src="images/zx3.jpg"/></p>
+                </div>
+                <div class="gr2-1">
+                        <div class="gr2-1a">
+                              <p  class="gr2-1ca"><a href="#">宽带新装</a></p>
+                              <p  class="gr2-1ac"><a href="#"><img src="images/zx4.jpg"/></a></p>
+                        </div>
+                        <div class="gr2-1b">
+                              <p  class="gr2-1ca"><a href="#">宽带新装</a></p>
+                              <p  class="gr2-1cc"><a href="#"><img src="images/zx5.jpg"/></a></p>
+                        </div>
+                </div>
+          </div>
+          </div>
+      <div class="gg3">
+           <div class="g3t">
+              <div class="g3t1">
+                <div class="g3timg">
+                     <img src="images/main_box31.png"/>
+                </div>
+                <div class="g3ttext">
+                    <a>商务工作，由我自由驰骋!</a>
+                </div>
+                </div>  
+          </div>
+          <div class="g3l">
+                <div class="g3ltop">
+                      <div class="g3ltop1">
+                            <p class="g3ltopp1"><a href="#"><img src="images/4g.png"/></a></p>
+                            <p class="g3ltopp2"><a href="#">首充50送50</a></p>
+                      </div>
+                      <div class="g3ltop2">
+                            <p class="g3ltopp1"><a href="#"><img src="images/@.png"/></a></p>
+                            <p class="g3ltopp2"><a href="#">预存30得60</a></p>
+                      </div>
+                </div>
+                <div class="g3lbottom">
+                    <div class="g3lbimg"><a href="#"><img src="images/ry.png"/></a></div>
+                    <div class="g3lbbg"></div>
+                    <div class="g3lbtext">
+                         <div>
+                         <a href="#">充值卡充值</a>
+                         <a href="#">购买充值卡</a>
+                         <a href="#">批量充值</a><br>
+                         <a href="#">银行卡充流量</a>
+                         </div>
+                         <div>
+                         <a href="#">银行卡充值</a>
+                         <a href="#">流量卡充值</a>
+                         <a href="#">批量充值</a><br>
+                         <a href="#">银行卡充流量</a>
+                         </div>
+                    </div>
+                </div>
+          </div>
+          <div class="g3z">
+             <a href="#"><img src="images/zgdx.jpg"/></a>
+          </div>
+          <div class="g3r">
+                <div class="g3r1">
+                       <div class="g3rr1"><a href="#">10元加餐包</a></div>
+                       <div class="g3rr2"><a href="#">10元300MB全国流量</a></div>
+                       <div class="g3rr3"><a>10元</a></div>
+                       <div class="g3rr4"><a href="#"><img src="images/s1.jpg"/></a></div>
+                </div>  
+                <div class="g3r2">
+                       <div class="g3rr1"><a href="#">iPhone7</a></div>
+                       <div class="g3rr2"><a href="#">A10芯片 IOS10系统</a></div>
+                       <div class="g3rr3"><a>5599元</a></div>
+                       <div class="g3rr4"><a href="#"><img src="images/s2.jpg"/></a></div>
+                </div> 
+                <div class="g3r3">
+                      <div class="g3r1a">
+                           <p class="j1"><a href="#">港澳台流量包</a></p>
+                           <p class="j2"><a href="#"><img src="images/s3.png"/></a></p>
+                      </div>
+                      <div class="g3r1b">
+                            <p class="j3"><a href="#">东南亚流量包</a></p>
+                           <p class="j4"><a href="#"><img src="images/s4.png"/></a></p>
+                      </div> 
+                </div> 
+          </div>
+     </div>
+     <div class="gg3">
+           <div class="g3t">
+              <div class="g3t1">
+                <div class="g3timg">
+                     <img src="images/xy.png"/>
+                </div>
+                <div class="g3ttext g4ttext">
+                    <a>爸爸,老公,小外甥,都要心满意足!</a>
+                </div>
+                </div>  
+          </div>
+          <div class="g3l">
+                <div class="g3ltop g4ltop">
+                      <div class="g3ltop1">
+                            <p class="g3ltopp1"><a href="#"><img src="images/jf.png"/></a></p>
+                            <p class="g3ltopp2 g4ltopp2"><a href="#">积分商城</a></p>
+                      </div>
+                      <div class="g3ltop2">
+                            <p class="g3ltopp1"><a href="#"><img src="images/lyh.png"/></a></p>
+                            <p class="g3ltopp2"><a href="#">老用户特权</a></p>
+                      </div>
+                </div>
+                <div class="g3lbottom g4lbottom">
+                    <div class="g3lbimg"><a href="#"><img src="images/yg1.jpg"/></a></div>
+                    <div class="g3lbbg"></div>
+                    <div class="g3lbtext">
+                         <div>
+                         <a href="#">流量专区</a>
+                         </div>
+                         <div>
+                         <a href="#">老用户</a>
+                         </div>
+                    </div>
+                </div>
+          </div>
+          <div class="g3z">
+             <a href="#"><img src="images/dykd.jpg"/></a>
+          </div>
+          <div class="g3r">
+                <div class="g3r1">
+                      <div class="g3r1a">
+                           <div class="x1"><a href="#">小米6</a></div>
+                           <div class="x2"><a href="#">变焦双摄 拍人更美</a></div>
+                           <div class="x3"><a href="#">2379元</a></div>
+                           <div class="x4"><a href="#"><img src="images/y1.jpg"/></a></div>
+                      </div>
+                      <div class="g3r1b">
+                            <div class="j3"><a href="#">华为 麦芒5</a></div>
+                            <div class="j4"><a href="#"><img src="images/ha.jpg"/></a></div>
+                      </div>
+                </div>  
+                <div class="g3r2">
+                       <div class="g3rr1"><a href="#">魅蓝E2</a></div>
+                       <div class="g3rr2"><a href="#">让美好的 强大起来</a></div>
+                       <div class="g3rr3"><a>1358元</a></div>
+                       <div class="g3rr4"><a href="#"><img src="images/x3.png"/></a></div>
+                </div> 
+                <div class="g3r3">
+                      <div class="g3r1a">
+                           <div class="x1"><a href="#">9元卡</a></div>
+                           <div class="x2 x20"><a href="#">月基本费9元，300M国内流量</a></div>
+                           <div class="x4"><a href="#"><img src="images/sc.jpg"/></a></div>
+                      </div>
+                      <div class="g3r1b">
+                           <p class="j3"><a href="#">28元融合宽带</a></p>
+                           <p class="j4"><a href="#"><img src="images/28.jpg"/></a></p>
+                      </div>
+                </div>
+          </div>
+          <div class="gg3">
+           <div class="g3t">
+              <div class="g3t1">
+                <div class="g3timg">
+                     <img src="images/51.png"/>
+                </div>
+                <div class="g3ttext g4ttext">
+                    <a>职场生活，忙碌并快乐着</a>
+                </div>
+                </div>  
+          </div>
+          <div class="g3l">
+                <div class="g3ltop g5ltop">
+                      <div class="g3ltop1">
+                            <p class="g3ltopp1"><a href="#"><img src="images/52.png"/></a></p>
+                            <p class="g3ltopp2 g4ltopp2"><a href="#">流量救急</a></p>
+                      </div>
+                      <div class="g3ltop2">
+                            <p class="g3ltopp1"><a href="#"><img src="images/53.png"/></a></p>
+                            <p class="g3ltopp2"><a href="#">4G流量包</a></p>
+                      </div>
+                </div>
+                <div class="g3lbottom g5lbottom">
+                    <div class="g3lbimg"><a href="#"><img src="images/54.png"/></a></div>
+                    <div class="g3lbbg"></div>
+                    <div class="g3lbtext">
+                         <div>
+                         <a href="#">余额查询</a><br>
+                         <a href="#">欠费查询</a><br>
+                         <a href="#">套餐使用情况</a><br>
+                         <a href="#">实时话费查询</a>
+                         </div>
+                         <div>
+                         <a href="#">余额查询</a><br>
+                         <a href="#">欠费查询</a><br>
+                         <a href="#">套餐使用情况</a><br>
+                         <a href="#">交费助手查询</a>
+                         </div>
+                    </div>
+                </div>
+          </div>
+          <div class="g3z">
+             <a href="#"><img src="images/55.jpg"/></a>
+          </div>
+          <div class="g3r">
+                <div class="g3r1">
+                        <div class="g3r1a">
+                           <div class="x1 x1a"><a href="#">iPhone 7 Plus</a></div>
+                           <div class="x2 x2a"><a href="#">全网通</a></div>
+                           <div class="x3"><a href="#">4699元</a></div>
+                           <div class="x4"><a href="#"><img src="images/pg.jpg"/></a></div>
+                      </div>
+                            <p class="j3 z3 z5"><a href="#">3元/月大王卡送优酷视频会员</a></p>
+                            <p class="j4"><a href="#"><img src="images/3yw.jpg"/></a></p>
+                </div>  
+                <div class="g3r2">
+                     <div class="g3r1a">
+                           <p class="j1"><a href="#">深夜包6G</a></p>
+                           <p class="j2"><a href="#"><img src="images/c1.png"/></a></p>
+                      </div>
+                      <div class="g3r1b">
+                            <p class="j3 z3"><a href="#">9元/月日租卡免费定向视频</a></p>
+                            <p class="j4"><a href="#"><img src="images/93.jpg"/></a></p>
+                      </div></div> 
+                <div class="g3r3"><div class="g3r1a">
+                           <p class="j1"><a href="#">7天假日包</a></p>
+                           <p class="j2"><a href="#"><img src="images/c2.png"/></a></p>
+                      </div>
+                      <div class="g3r1b">
+                            <p class="j3 z3"><a href="#">49放心用100分钟通话</a></p>
+                           <p class="j4"><a href="#"><img src="images/94.jpg"/></a></p>
+                      </div></div>
+          </div>
+          <div class="gg3">
+           <div class="g3t">
+              <div class="g3t1">
+                <div class="g3timg">
+                     <img src="images/61.png"/>
+                </div>
+                <div class="g3ttext g4ttext">
+                    <a>旅行,户外,健身,一个都不能少!</a>
+                </div>
+                </div>  
+          </div>
+          <div class="g3l">
+                <div class="g3ltop g4ltop">
+                      <div class="g3ltop1">
+                            <p class="g3ltopp1"><a href="#"><img src="images/62.png"/></a></p>
+                            <p class="g3ltopp2 g6ltopp2"><a href="#">套餐使用查询</a></p>
+                      </div>
+                </div>
+                <div class="g3lbottom g4lbottom">
+                    <div class="g3lbimg"><a href="#"><img src="images/11.png"/></a></div>
+                    <div class="g3lbbg"></div>
+                    <div class="g3lbtext">
+                         <div>
+                         <a href="#">移动电源</a><br>
+                         <a href="#">内存卡</a><br>
+                         <a href="#">摄像头</a><br>
+                         <a href="#">耳机</a>
+                         </div>
+                         <div>
+                         <a href="#">机顶盒</a><br>
+                         <a href="#">手机膜</a><br>
+                         <a href="#">摄像头</a><br>
+                         <a href="#">耳机</a>
+                         </div>
+                    </div>
+                </div>
+          </div>
+          <div class="g3z">
+             <a href="#"><img src="images/64.jpg"/></a>
+          </div>
+          <div class="g3r">
+                <div class="g3r1">
+                     <div class="g3r1a">
+                           <div class="x1 x11"><a href="#">宽带优惠</a></div>
+                           <div class="x2 x22"><a href="#">新用户专享</a></div>
+                           <div class="x4 x44"><a href="#"><img src="images/50.jpg"/></a></div>
+                     </div>
+                      <div class="g3r1b">
+                           <p class="j3"><a href="#">49放心用</a></p>
+                           <p class="j4"><a href="#"><img src="images/49.jpg"/></a></p>
+                      </div> 
+                </div>  
+                <div class="g3r2">
+                      <div class="g3rr1"><a href="#">极速包月卡</a></div>
+                       <div class="g3rr4"><a href="#"><img src="images/c3.JPG"/></a></div>
+                </div> 
+                <div class="g3r3">
+                     <div class="g3r1a">
+                           <div class="x1 x11"><a href="#">宽带优惠</a></div>
+                           <div class="x2 x22"><a href="#">新用户专享</a></div>
+                           <div class="x4 x44"><a href="#"><img src="images/100.jpg"/></a></div>
+                     </div>
+                      <div class="g3r1b">
+                           <p class="j3"><a href="#">99放心用</a></p>
+                           <p class="j4"><a href="#"><img src="images/99.jpg"/></a></p>
+                      </div> 
+                </div>
+          </div>  
+     </div>
+     </div>
+     </div>
+    <div class="biao">
+        <div class="biao1">
+             <div class="ku">
+                 <div class="dimg"><img src="images/1.png"/></div>
+                 <div class="biaotext">
+                     <ul>
+                          <li class="biaoli1">中国电信</li>
+                          <li class="biaoli2">官方认证渠道</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="ku ku2">
+                 <div class="dimg"><img src="images/2.png"/></div>
+                 <div class="biaotext">
+                     <ul>
+                          <li class="biaoli1">正品保障</li>
+                          <li class="biaoli2">正规发票</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="ku ku3">
+                 <div class="dimg"><img src="images/3.png"/></div>
+                 <div class="biaotext">
+                     <ul>
+                          <li class="biaoli1">品牌厂家</li>
+                          <li class="biaoli2">优势品牌</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="ku ku4">
+                 <div class="dimg"><img src="images/4.png"/></div>
+                 <div class="biaotext">
+                     <ul>
+                          <li class="biaoli1">新品上市</li>
+                          <li class="biaoli2">同步上市</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="ku ku5">
+                 <div class="dimg"><img src="images/5.png"/></div>
+                 <div class="biaotext">
+                     <ul>
+                          <li class="biaoli1">全场商品</li>
+                          <li class="biaoli2">无忧退换货</li>
+                     </ul>
+                 </div>
+        </div>  
+    </div>
+    <div class="biao2">
+        <div class="wei30">
+             <div class="weilogo"><img src="images/foot_down_12.png"/></div>
+             <div class="weitext">
+                  <div class="weitext1">
+                       <div>
+                           <a href="#" class="weitext1a">购物指南</a><br>
+                           <a href="#">实名制</a><br>
+                           <a href="#">网络制式</a><br>
+                           <a href="#">订单查询</a><br>
+                           <a href="#">购物流程</a><br>
+                           <a href="#">卖场须知</a><br>
+                           <a href="#">用户隐私政策</a><br>
+                       </div>
+                        <div>
+                           <a href="#" class="weitext1a">物流配送</a><br>
+                           <a href="#">收货须知</a><br>
+                           <a href="#">配送说明</a><br>
+                       </div>
+                        <div>
+                           <a href="#" class="weitext1a">支付方式</a><br>
+                           <a href="#">赠费缴费说明</a><br>
+                       </div>
+                        <div>
+                           <a href="#" class="weitext1a">售后服务</a><br>
+                           <a href="#">服务承诺</a><br>
+                           <a href="#">退款说明</a><br>
+                           <a href="#">退换流程</a><br>
+                           <a href="#">关于发票制度的说明</a><br>
+                       </div>
+                       <div>
+                           <a href="#" class="weitext1a">便民服务</a><br>
+                           <a href="#">常见问题解答</a><br>
+                           <a href="#">归属地查询</a><br>
+                           <a href="#">wifi热点查询</a><br>
+                           <a href="#">10000知道</a><br>
+                       </div>
+                  </div>
+             </div>
+             <div class="weier"><img src="images/er.jpg"/></div>
+             <div class="weitb">
+                  <ul>
+                     <li>
+                         <p><a href="#"><img src="images/kf.png"/></a></p>
+                         <p><a href="#">在线客服</a></p>
+                     </li>
+                     <li>
+                         <p><a href="#"><img src="images/wb.png"/></a></p>
+                         <p><a href="#">微博客服</a></p>
+                     </li>
+                     <li>
+                         <p><a href="#"><img src="images/zd.png"/></a></p>
+                         <p><a href="#">10000知道</a></p>
+                     </li>
+                     <li>
+                         <p><a href="#"><img src="images/zf.png"/></a></p>
+                         <p><a href="#">资费专区</a></p>
+                     </li>
+                  </ul>
+             </div>
+        </div>
+    </div>
+    <div class="weide">
+          <ul>
+              <li class="weideli1"><a style="font-size:16px; color:#222;">电信欢go网</a> | <a style=" font-size:16px;">合作伙伴</a></li>
+              <li>
+                 <a href="#">北京欢go网</a>|
+                 <a href="#">安徽欢go网</a>|
+                 <a href="#">重庆欢go网</a>|
+                 <a href="#">福建欢go网</a>|
+                 <a href="#">广东欢go网</a>|
+                 <a href="#">甘肃欢go网</a>|
+                 <a href="#">广西欢go网</a>|
+                 <a href="#">贵州欢go网</a>|
+                 <a href="#">湖北欢go网</a>|
+                 <a href="#">湖南欢go网</a>|
+                 <a href="#">河北欢go网</a>|
+                 <a href="#">河南欢go网</a>|
+                 <a href="#">海南欢go网</a>|
+                 <a href="#">黑龙江欢go网</a>|
+                 <a href="#">江苏欢go网</a>|
+              </li>
+              <li>
+                 <a href="#">吉林欢go网</a>|
+                 <a href="#">江西欢go网</a>|
+                 <a href="#">辽宁欢go网</a>|
+                 <a href="#">内蒙古欢go网</a>|
+                 <a href="#">宁夏欢go网</a>|
+                 <a href="#">青海欢go网</a>|
+                 <a href="#">山东欢go网</a>|
+                 <a href="#">上海欢go网</a>|
+                 <a href="#">山西欢go网</a>|
+                 <a href="#">陕西欢go网</a>|
+                 <a href="#">四川欢go网</a>|
+                 <a href="#">天津欢go网</a>|
+                 <a href="#">新疆欢go网</a>|
+                 <a href="#">西藏欢go网</a>|
+                 <a href="#">云南欢go网</a>|
+              </li>
+              <li>
+                 <a href="#">浙江欢go网</a>|
+              </li>
+          </ul>
+    </div>
+    <div class="weigg">
+           <div class="weigga">
+              <a href="#">电信公告</a> | 
+              <a href="#">网站导航</a> | 
+              <a href="#">掌上营业厅</a> | 
+           </div>
+    </div>
+    <div class="weigg1">
+        <a>版权所有©2012 中国电信集团公司 [ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP备 09031924号</a>
+    </div>
+    <div class="weigg2">
+        <a href="#"><img src="images/d1.jpg"/></a>
+        <a href="#"><img src="images/d2.png"/></a>
+        <a href="#"><img src="images/d3.png"/></a>
+        <a href="#"><img src="images/d4.png"/></a>
+        <a href="#"><img src="images/d5.jpg"/></a>
+        <a href="#"><img src="images/d6.jpg"/></a>
+        <a href="#"><img src="images/d7.jpg"/></a>
+    </div>
+    <!--尾部框-->
+    </div>
+</body>
+</html>
