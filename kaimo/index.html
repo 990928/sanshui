@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报名</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="main">
+        <img src="images/logo.png" alt="" class="logo">
+        <div class="infogroup">
+            <div class="list">
+                <span><em>*</em>姓名：</span>
+                <input type="text" name="name" id="" placeholder="请输入您的姓名">
+            </div>
+            <div class="list">
+                <span><em>*</em>城市：</span>
+                <input type="text" name="address" id="" placeholder="请输入您所在城市">
+            </div>
+            <div class="list">
+                <span><em>*</em>电话：</span>
+                <input type="number" name="phone" id="" placeholder="请输入您的电话">
+            </div>
+            <div class="list">
+                <span><em>*</em>公司名称：</span>
+                <input type="text" name="company" id="" placeholder="请输入您所在公司名称">
+            </div>
+            <div class="list">
+                <span><em>*</em>职位：</span>
+                <input type="text" name="job" id="" placeholder="请输入您的职位">
+            </div>
+            <button class="submit">提交</button>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script>
+        $(function () {
+            $('.submit').on('click', function () {
+                var reg_tel = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/;
+                var data = {
+                    Name: $('input[name=name]').val(),
+                    City: $('input[name=address]').val(),
+                    PhoneNumber: $('input[name=phone]').val(),
+                    Company: $('input[name=company]').val(),
+                    Position: $('input[name=job]').val(),
+                };
+                if(!data.Name || !data.City || !data.PhoneNumber || !data.Company || !data.Position){
+                    alert('请先完善表单信息！')
+                    return false
+                }
+                if(!reg_tel.test(data.PhoneNumber)){
+                    alert("请正确填写您的手机号码！");
+                    return false
+                }
+                $.ajax({
+                    url: 'http://kaimo.yuchong.net/api/home/ApplyPosition',
+                    type: 'get',
+                    data: data,
+                    success: function (res) {
+                        var res =  $.parseJSON(res);
+                        alert(res.Result);
+                        $('input[name=name]').val('');
+                        $('input[name=address]').val('');
+                        $('input[name=phone]').val('');
+                        $('input[name=company]').val('');
+                        $('input[name=job]').val('');
+                    },
+                    error: function (res) {
+                        var res =  $.parseJSON(res);
+                        alert(res.ErrMsg);
+                    },
+                });
+            });
+        })
+    </script>
+</body>
+
+</html>
